@@ -1212,7 +1212,7 @@
 	<ResearchProjectDef>
 		<defName>SK_BiofuelRefinery</defName>
 		<label>Biofuel Refinery</label>
-		<description>Расщепитель сырья\nХранилище хим топлива\nНасос химтоплива\nСифон хим топлива</description>
+		<description>Перегонный аппарат\nХим топливо из древесины\nХимтопливо из органики\nХим топливо из фекалий\nFertilizer from Biosolids</description>
 		<baseCost>800</baseCost>
 		<techLevel>Industrial</techLevel>
 		<tab>RangedCombat</tab>
