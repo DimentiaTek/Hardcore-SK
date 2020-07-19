@@ -2,6 +2,7 @@
 <ModMetaData>
 	<name>Research patch</name>
 	<author>Damudidubudab</author>
+	<packageId>Hardcore_SK.ResearchPatch</packageId>
 	<supportedVersions>
 		<li>1.1</li>
 	</supportedVersions>
