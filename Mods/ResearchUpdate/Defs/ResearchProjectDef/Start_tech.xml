@@ -1223,7 +1223,7 @@
 		</prerequisites>
 	</ResearchProjectDef>
 
-	<!-- 1 Oil-->
+	<!-- 5 Oil-->
 	<ResearchProjectDef>
 		<defName>SK_OilV</defName>
 		<label>Oil Lab</label>
