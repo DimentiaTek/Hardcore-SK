@@ -1,0 +1,1546 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- 1 RangedCombat -->
+	<ResearchProjectDef>
+		<defName>SK_ArrowsBolts</defName>
+		<label>SK_ArrowsBolts</label>
+		<description>яд Стрелы(50)\nяд дротики(50)\nкаменные стрелы</description>
+		<baseCost>100</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>0.0</researchViewX>
+		<researchViewY>0.0</researchViewY>
+<!--  		<prerequisites>
+			<li>SK_SoilFertillizationI</li>
+		</prerequisites>	-->
+	</ResearchProjectDef>
+	
+	<!-- 2 RangedCombat-->
+	<ResearchProjectDef>
+		<defName>SK_Bow</defName>
+		<label>SK_Bow</label>
+		<description>Мощный лук\nРекурсивный лук\nМетал стрелы\nВзрывные стрелы.</description>
+		<baseCost>200</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>1.0</researchViewX>
+		<researchViewY>0.0</researchViewY>
+		<prerequisites>
+			<li>SK_ArrowsBolts</li>
+		</prerequisites>
+	</ResearchProjectDef>
+	
+		<!-- 3 RangedCombat-->
+	<ResearchProjectDef>
+		<defName>SK_AdvanchedBowI</defName>
+		<label>SK_AdvanchedBow I</label>
+		<description>Greate Bow\nОднозарядн арбатет Раткин\nУлучшенный однозарядн арбатет Раткин\nУсиленный арбалет\nЯдовитые болты\nМеталлические болты.</description>
+		<baseCost>200</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>2.0</researchViewX>
+		<researchViewY>0.0</researchViewY>
+		<prerequisites>
+			<li>SK_Bow</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+		<!-- 3 RangedCombat-->
+	<ResearchProjectDef>
+		<defName>SK_Ballista</defName>
+		<label>SK_BallistaСatapult</label>
+		<description>строить Мини-баллисту\nстроить Катапульту\nДетали баллисты\nдетали катапульты\nМет болты для баллисты(10)\nКаменный шар\nВзрывной шар.</description>
+		<baseCost>200</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>2.0</researchViewX>
+		<researchViewY>0.6</researchViewY>
+		<prerequisites>
+			<li>SK_Bow</li>
+		</prerequisites>
+	</ResearchProjectDef>	
+	
+	<!-- 4 RangedCombat-->
+	<ResearchProjectDef>
+		<defName>SK_AdvanchedBowII</defName>
+		<label>SK_AdvanchedBowII</label>
+		<description>Многозарядный арбалет раткин\nарбалет Скорпион\nсделать Балестра\nГранаты на палке(3)\nВзрывные болты.</description>
+		<baseCost>300</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>3.0</researchViewX>
+		<researchViewY>0.0</researchViewY>
+		<prerequisites>
+			<li>SK_AdvanchedBowI</li>
+		</prerequisites>
+	</ResearchProjectDef>	
+		
+	<!-- 5 RangedCombat-->
+	<ResearchProjectDef>
+		<defName>SK_WeaponCraftingTableI</defName>
+		<label>SK_WeaponCraftingTableI</label>
+		<description>Оружейный станок\nВерстак боеприпасов\nсделать Сера\nПорох\nНапалм\nОгнетушитель\nКоктейль Молотова\nБинокль\n9х19\n7.62х25\n.45\n.303\n7.62х54\n7.62х39\n.12</description>
+		<baseCost>400</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>6.0</researchViewX>
+		<researchViewY>0.0</researchViewY>
+		<prerequisites>
+			<li>SK_AdvanchedBowII</li>
+			<li>SK_EnergyI</li>			
+		</prerequisites>
+	</ResearchProjectDef>	
+
+	<!-- 6 RangedCombat-->
+	<ResearchProjectDef>
+		<defName>SK_WeaponRifleComponent</defName>
+		<label>SK_WeaponRifleComponent</label>
+		<description>Детали винтовки\nВинтовки Lee-Enfield\nВинтовка Мосина\nВинтовка раткинов\nВинтовка СКС</description>
+		<baseCost>500</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>6.0</researchViewX>
+		<researchViewY>0.0</researchViewY>
+		<prerequisites>
+			<li>SK_WeaponCraftingTableI</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!-- 6 RangedCombat-->
+	<ResearchProjectDef>
+		<defName>SK_WeaponPistolComponent</defName>
+		<label>Pistol Component</label>
+		<description>Пистолетные Детали\nПистолет Colt m1911\nVector CP1\nTT-34</description>
+		<baseCost>500</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>6.0</researchViewX>
+		<researchViewY>0.0</researchViewY>
+		<prerequisites>
+			<li>SK_WeaponCraftingTableI</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!-- 7 RangedCombat-->
+	<ResearchProjectDef>
+		<defName>SK_WeaponPistolII</defName>
+		<label>Pistol II</label>
+		<description>Revolver Smith and Wesson M1917\nПистолет Sphinx AT 2000\nBeretta 93R\nPara Ordnance P14-45</description>
+		<baseCost>700</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>6.0</researchViewX>
+		<researchViewY>0.0</researchViewY>
+		<prerequisites>
+			<li>SK_WeaponPistolComponent</li>
+	<!--		<li>SK_WeaponPistolComponent</li>	<!-->		
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!-- 7 RangedCombat-->
+	<ResearchProjectDef>
+		<defName>SK_WeaponUsiComponent</defName>
+		<label>Usi Component</label>
+		<description>Детали ПП\nПП M3 GreaseGun\nПП Scorpion EVO3\nПП TMP с глушителем\nПП Usi\nППШ-41</description>
+		<baseCost>500</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>6.0</researchViewX>
+		<researchViewY>0.0</researchViewY>
+		<prerequisites>
+			<li>SK_WeaponPistolComponent</li>
+		</prerequisites>
+	</ResearchProjectDef>
+	
+	<!-- 8 RangedCombat-->
+	<ResearchProjectDef>
+		<defName>SK_WeaponUsiComponentII</defName>
+		<label>SMG II</label>
+		<description>Kriss Vector K10\nHK MP5A3\nHK UMP45\nПП Nec-9 Гвоздодер</description>
+		<baseCost>500</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>6.0</researchViewX>
+		<researchViewY>0.0</researchViewY>
+		<prerequisites>
+			<li>SK_WeaponUsiComponent</li>
+	<!--		<li>SK_WeaponUsiComponent</li>			<!-->
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!-- 6 RangedCombat-->
+	<ResearchProjectDef>
+		<defName>SK_WeaponShotgunComponent</defName>
+		<label>Shotgun Component</label>
+		<description>Детали дробовика\nДробовик M37A2\nДробовик Remington 870\nДедушкино ружье\nДробовик раткинов</description>
+		<baseCost>500</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>6.0</researchViewX>
+		<researchViewY>0.0</researchViewY>
+		<prerequisites>
+			<li>SK_WeaponCraftingTableI</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!-- 7 RangedCombat-->
+	<ResearchProjectDef>
+		<defName>SK_WeaponShotgunII</defName>
+		<label>Shotgun II</label>
+		<description>Striker shotgun\nAtchisson Assault AA-12\nM90 CAWS\nM45 Tactical Shotgun</description>
+		<baseCost>700</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>6.0</researchViewX>
+		<researchViewY>0.0</researchViewY>
+		<prerequisites>
+			<li>SK_WeaponShotgunComponent</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!-- 6 Grenade-->
+	<ResearchProjectDef>
+		<defName>SK_WeaponGrenade</defName>
+		<label>Weapon Grenade</label>
+		<description>Осколочная граната\nДымовая граната\nПенная граната</description>
+		<baseCost>500</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>6.0</researchViewX>
+		<researchViewY>0.0</researchViewY>
+		<prerequisites>
+			<li>SK_WeaponCraftingTableI</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!-- 7 RangedCombat-->
+	<ResearchProjectDef>
+		<defName>SK_WeaponGrenadeII</defName>
+		<label>Weapon Grenade II</label>
+		<description>Осколочная граната х3\nДымовая граната х3\nПенная граната х3</description>
+		<baseCost>500</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>6.0</researchViewX>
+		<researchViewY>0.0</researchViewY>
+		<prerequisites>
+			<li>SK_WeaponGrenade</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+
+	<!-- 1 Аccessories-->
+	<ResearchProjectDef>
+		<defName>SK_AccessoriesI</defName>
+		<label>SK_Accessories I</label>
+		<description>Строить горшок из рога</description>
+		<baseCost>100</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>0.0</researchViewX>
+		<researchViewY>1.0</researchViewY>
+<!--		<prerequisites>
+			<li>SK_AdvanchedBowII</li>
+		</prerequisites>   -->
+	</ResearchProjectDef>
+	
+	<!-- 2 Аccessories-->
+	<ResearchProjectDef>
+		<defName>SK_AccessoriesII</defName>
+		<label>SK_Accessories II</label>
+		<description>Строить Цветочный горшок\nстроить Мольберт</description>
+		<baseCost>200</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>3.0</researchViewX>
+		<researchViewY>1.0</researchViewY>
+		<prerequisites>
+			<li>SK_AccessoriesI</li>
+		</prerequisites>
+	</ResearchProjectDef>
+	
+	<!-- 3 Аccessories-->	
+	<ResearchProjectDef>
+		<defName>SK_AccessoriesIII</defName>
+		<label>SK_Accessories III</label>
+		<description>Строить Пента-горшок\nстроить Decorated Pod</description>
+		<baseCost>500</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>5.0</researchViewX>
+		<researchViewY>1.0</researchViewY>
+		<prerequisites>
+			<li>SK_AccessoriesII</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!-- 2 Light-->	
+	<ResearchProjectDef>
+		<defName>SK_AccessoriesGlowstoneLamp</defName>
+		<label>Accessories Glowstone Lamp</label>
+		<description>Строить Лампа из Светокамня</description>
+		<baseCost>200</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>3.0</researchViewX>
+		<researchViewY>2.0</researchViewY>
+<!--		<prerequisites>
+			<li>SK_АccessoriesII</li>
+		</prerequisites>    -->
+	</ResearchProjectDef>	
+
+	<!-- 3 Light-->	
+	<ResearchProjectDef>
+		<defName>SK_LightI</defName>
+		<label>Light I</label>
+		<description>Свеча?</description>
+		<baseCost>400</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>3.0</researchViewX>
+		<researchViewY>2.0</researchViewY>
+		<prerequisites>
+			<li>SK_AccessoriesGlowstoneLamp</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!-- 4 Light-->	
+	<ResearchProjectDef>
+		<defName>SK_Lamp</defName>
+		<label>SK_Lamp</label>
+		<description>Лампа\nНапольная лампа?</description>
+		<baseCost>500</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>3.0</researchViewX>
+		<researchViewY>2.0</researchViewY>
+		<prerequisites>
+			<li>SK_LightI</li>
+			<li>SK_EnergyI</li>			
+		</prerequisites>
+	</ResearchProjectDef>
+	
+	<!-- 5 Light-->	
+	<ResearchProjectDef>
+		<defName>SK_LampI</defName>
+		<label>Light I</label>
+		<description>Внешняя Лампа\nНастенная лампа\nПотолочная лампа</description>
+		<baseCost>500</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>3.0</researchViewX>
+		<researchViewY>2.0</researchViewY>
+		<prerequisites>
+			<li>SK_LightI</li>
+			<li>SK_EnergyI</li>			
+		</prerequisites>
+	</ResearchProjectDef>
+	
+	<!-- 5 Light-->	
+	<ResearchProjectDef>
+		<defName>SK_LampColor</defName>
+		<label>SK_LampColor</label>
+		<description>Красная Лампа\nЗаленая лампа\nСиняя лампа</description>
+		<baseCost>600</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>3.0</researchViewX>
+		<researchViewY>2.0</researchViewY>
+		<prerequisites>
+			<li>SK_LampI</li>
+		</prerequisites>
+	</ResearchProjectDef>
+	
+	<!-- 6 Light-->	
+	<ResearchProjectDef>
+		<defName>SK_LampII</defName>
+		<label>Light II</label>
+		<description>Настенный фонарь\nНапольная лампа?</description>
+		<baseCost>600</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>3.0</researchViewX>
+		<researchViewY>2.0</researchViewY>
+		<prerequisites>
+			<li>SK_LampI</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!-- 7 Light-->	
+	<ResearchProjectDef>
+		<defName>SK_LampIII</defName>
+		<label>SK_LampIII</label>
+		<description>Светодиодный дюралайт</description>
+		<baseCost>700</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>3.0</researchViewX>
+		<researchViewY>2.0</researchViewY>
+		<prerequisites>
+			<li>SK_LampII</li>
+		</prerequisites>
+	</ResearchProjectDef>
+	
+	<!-- 1 Defend-->	
+	<ResearchProjectDef>
+		<defName>SK_DefendI</defName>
+		<label>SK_Defend I Рогатка</label>
+		<description>строить Рогатка\nстроить Полоса препятствий</description>
+		<baseCost>100</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>3.0</researchViewX>
+		<researchViewY>3.0</researchViewY>
+<!--		<prerequisites>
+			<li>SK_АccessoriesII</li>
+		</prerequisites>    -->
+	</ResearchProjectDef>
+	
+	<!-- 3 Defend-->	
+	<ResearchProjectDef>
+		<defName>SK_DefendBagSand</defName>
+		<label>SK_DefendBagSand Мешок</label>
+		<description>строить Мешок с песком</description>
+		<baseCost>200</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>4.0</researchViewX>
+		<researchViewY>3.0</researchViewY>
+		<prerequisites>
+			<li>SK_DefendI</li>
+		</prerequisites>    
+	</ResearchProjectDef>
+	
+	<!-- 3 Defend \n\n\n\n\n\n-->	
+	<ResearchProjectDef>
+		<defName>SK_DefendBarricade</defName>
+		<label>SK_DefendBarricade</label>
+		<description>строить Баррикада</description>
+		<baseCost>300</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>5.0</researchViewX>
+		<researchViewY>3.0</researchViewY>
+		<prerequisites>
+			<li>SK_DefendBagSand</li>
+		</prerequisites>    
+	</ResearchProjectDef>	
+
+	<!-- 4 Defend \n\n\n\n\n\n-->	
+	<ResearchProjectDef>
+		<defName>SK_DefendWire</defName>
+		<label>DefendWire</label>
+		<description>Сетка рабица\nКалитка с сеткой рабица\nПреграда\nКолючая проволока</description>
+		<baseCost>400</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>4.0</researchViewX>
+		<researchViewY>3.0</researchViewY>
+		<prerequisites>
+			<li>SK_DefendI</li>
+		</prerequisites>    
+	</ResearchProjectDef>
+
+	<!-- 5 Defend \n\n\n\n\n\n-->	
+	<ResearchProjectDef>
+		<defName>SK_Embrasures</defName>
+		<label>Embrasures</label>
+		<description>Амбразура\nSecurity barrier\nОсколочная мина\nЗажигательная мина</description>
+		<baseCost>500</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>4.0</researchViewX>
+		<researchViewY>3.0</researchViewY>
+		<prerequisites>
+			<li>SK_DefendBagSand</li>
+		</prerequisites>    
+	</ResearchProjectDef>
+
+	<!-- 5 Defend \n\n\n\n\n\n-->	
+	<ResearchProjectDef>
+		<defName>SK_Bomb</defName>
+		<label>SK_Bomb</label>
+		<description>Дымовая мина\nПенная мина\nХлопушка с пожарной пеной</description>
+		<baseCost>500</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>4.0</researchViewX>
+		<researchViewY>3.0</researchViewY>
+		<prerequisites>
+			<li>SK_Embrasures</li>
+		</prerequisites>    
+	</ResearchProjectDef>
+	
+	<!-- 5 Defend \n\n\n\n\n\n-->	
+	<ResearchProjectDef>
+		<defName>SK_DefendII</defName>
+		<label>SK_Defend II</label>
+		<description>Забор с колючей проволокой\nМеталлические ворота</description>
+		<baseCost>400</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>4.0</researchViewX>
+		<researchViewY>3.0</researchViewY>
+		<prerequisites>
+			<li>SK_DefendWire</li>
+		</prerequisites>    
+	</ResearchProjectDef>
+
+	<!-- 5 Defend \n\n\n\n\n\n-->	
+	<ResearchProjectDef>
+		<defName>SK_DefendIII</defName>
+		<label>SK_Defend III</label>
+		<description>Армированная стена\nЭкранированная дверь\nМощьные ворота\nСтена с эл.подсветкой</description>
+		<baseCost>500</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>4.0</researchViewX>
+		<researchViewY>3.0</researchViewY>
+		<prerequisites>
+			<li>SK_DefendII</li>
+			<li>SK_ConstractionAutoDoors</li>			
+		</prerequisites>    
+	</ResearchProjectDef>
+	
+	<!-- 3 Constraction \n\n\n\n\n\n-->	
+	<ResearchProjectDef>
+		<defName>SK_ConstractionI</defName>
+		<label>SK_ConstractionI</label>
+		<description>строить Большая стелла\nВеликая стелла\nСаркофаг\nКолонна</description>
+		<baseCost>400</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>4.0</researchViewX>
+		<researchViewY>6.0</researchViewY>
+<!--		<prerequisites>
+			<li>SK_DefendII</li>
+		</prerequisites>    -->
+	</ResearchProjectDef>
+
+	<!-- 3 Constraction \n\n\n\n\n\n-->	
+	<ResearchProjectDef>
+		<defName>SK_ConstractionBridge</defName>
+		<label>SK_Constraction Bridge</label>
+		<description>строить Мост</description>
+		<baseCost>400</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>5.0</researchViewX>
+		<researchViewY>5.5</researchViewY>
+		<prerequisites>
+			<li>SK_ConstractionI</li>
+		</prerequisites>    
+	</ResearchProjectDef>		
+
+	<!-- 3 Constraction-->	
+	<ResearchProjectDef>
+		<defName>SK_ConstractionMetDoors</defName>
+		<label>SK_Constraction Metal Doors</label>
+		<description>строить Металлическая дверь</description>
+		<baseCost>400</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>7.0</researchViewX>
+		<researchViewY>6.0</researchViewY>
+		<prerequisites>
+			<li>SK_ConstractionI</li>
+			<li>SK_Horn</li>			
+		</prerequisites>    
+	</ResearchProjectDef>		
+	
+	<!-- 3 Constraction-->	
+	<ResearchProjectDef>
+		<defName>SK_ConstractionAutoDoors</defName>
+		<label>Auto Doors</label>
+		<description>Автодверь дверь\nДверь камеры</description>
+		<baseCost>400</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>7.0</researchViewX>
+		<researchViewY>6.0</researchViewY>
+		<prerequisites>
+			<li>SK_ConstractionMetDoors</li>
+			<li>SK_EnergyI</li>
+		</prerequisites>    
+	</ResearchProjectDef>
+	
+	<!-- 5 Constraction-->	
+	<ResearchProjectDef>
+		<defName>SK_ConstractionGlassAutoDoors</defName>
+		<label>SK_ConstractionGlassAutoDoors</label>
+		<description>Стеклянная Автодверь дверь</description>
+		<baseCost>600</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>7.0</researchViewX>
+		<researchViewY>6.0</researchViewY>
+		<prerequisites>
+			<li>SK_ConstractionAutoDoors</li>
+			<li>SK_ConstractionGlassRoof</li>
+		</prerequisites>    
+	</ResearchProjectDef>	
+	<!-- 3 Constraction-->	
+	<ResearchProjectDef>
+		<defName>SK_ConstractionWindows</defName>
+		<label>SK_Constraction Windows</label>
+		<description>строить Окно</description>
+		<baseCost>400</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>8.0</researchViewX>
+		<researchViewY>6.6</researchViewY>
+		<prerequisites>
+			<li>SK_ConstractionMetDoors</li>
+		</prerequisites>    
+	</ResearchProjectDef>
+	
+	<!-- 4 Constraction-->	
+	<ResearchProjectDef>
+		<defName>SK_ConstractionGlassRoof</defName>
+		<label>SK_ConstractionGlassRoof</label>
+		<description>Прозрачные крыши\nСтеклянные двери</description>
+		<baseCost>500</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>8.0</researchViewX>
+		<researchViewY>6.6</researchViewY>
+		<prerequisites>
+			<li>SK_ConstractionWindows</li>
+		</prerequisites>    
+	</ResearchProjectDef>
+
+	<!-- 1 Furniture-->	
+	<ResearchProjectDef>
+		<defName>SK_FurnitureI</defName>
+		<label>SK_Furniture I</label>
+		<description>строить Скамья\nТабурет\nСтол 1х1\nСтол3х3</description>
+		<baseCost>400</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>0.0</researchViewX>
+		<researchViewY>8.0</researchViewY>
+	</ResearchProjectDef>
+	
+	<!-- 1 Temperature-->	
+	<ResearchProjectDef>
+		<defName>SK_TemperatureI</defName>
+		<label>SK_Temperature I</label>
+		<description>строить Испарительный охладитель</description>
+		<baseCost>400</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>0.0</researchViewX>
+		<researchViewY>9.0</researchViewY>
+	</ResearchProjectDef>		
+	
+	<!-- 1 Joy-->	
+	<ResearchProjectDef>
+		<defName>SK_JoyI</defName>
+		<label>SK_Joy I</label>
+		<description>строить Кольцо для бросания камней</description>
+		<baseCost>400</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>0.0</researchViewX>
+		<researchViewY>11.0</researchViewY>
+	</ResearchProjectDef>		
+	
+	<!-- 2 Joy-->	
+	<ResearchProjectDef>
+		<defName>SK_JoyII</defName>
+		<label>SK_Joy II</label>
+		<description>строить Реверси\nШахматный стол</description>
+		<baseCost>400</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>5.0</researchViewX>
+		<researchViewY>11.0</researchViewY>
+		<prerequisites>
+			<li>SK_JoyI</li>
+		</prerequisites>  
+	</ResearchProjectDef>
+	
+	<!-- 1 Storage-->	
+	<ResearchProjectDef>
+		<defName>SK_Storage_I</defName>
+		<label>SK_Storage I</label>
+		<description>строить Бочка\nБольшая корзина\nКорзина\nСундук</description>
+		<baseCost>100</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>0.0</researchViewX>
+		<researchViewY>13.0</researchViewY>
+	</ResearchProjectDef>		
+
+	<!-- 2 Storage-->	
+	<ResearchProjectDef>
+		<defName>SK_Storage_II</defName>
+		<label>SK_Storage II</label>
+		<description>строить Поддон\nКонтейнер\nКрюки для мяса\nМедицинский шкаф</description>
+		<baseCost>200</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>5.0</researchViewX>
+		<researchViewY>13.0</researchViewY>
+		<prerequisites>
+			<li>SK_Storage_I</li>
+			<li>SK_Horn</li>			
+		</prerequisites>  
+	</ResearchProjectDef>
+
+	<!-- 3 Storage-->	
+	<ResearchProjectDef>
+		<defName>SK_Storage_III</defName>
+		<label>SK_Storage III</label>
+		<description>строить Стеллаж\nTail Shelf\nДлинный стелаж(Сеновал)</description>
+		<baseCost>300</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>8.0</researchViewX>
+		<researchViewY>13.0</researchViewY>
+		<prerequisites>
+			<li>SK_Storage_II</li>
+		</prerequisites>  
+	</ResearchProjectDef>	
+	
+	<!-- 1 Hygiene-->	
+	<ResearchProjectDef>
+		<defName>SK_HygieneI</defName>
+		<label>SK_Hygiene I</label>
+		<description>строить Балья\nКолодец\nВыгребная яма\nЯма для сжигания</description>
+		<baseCost>100</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>0.0</researchViewX>
+		<researchViewY>14.0</researchViewY>
+	</ResearchProjectDef>		
+
+	<!-- 2 Hygiene-->	
+	<ResearchProjectDef>
+		<defName>SK_HygieneII</defName>
+		<label>SK_Hygiene II</label>
+		<description>строить Компостер\nстроить Лоток\nсделать Удобрение</description>
+		<baseCost>300</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>2.0</researchViewX>
+		<researchViewY>14.0</researchViewY>
+		<prerequisites>
+			<li>SK_HygieneI</li>
+		</prerequisites> 
+	</ResearchProjectDef>
+	
+	<!-- 3 Hygiene-->	
+	<ResearchProjectDef>
+		<defName>SK_HygieneIII</defName>
+		<label>SK_Hygiene III</label>
+		<description>строить Дорожка 1х2\nстроить Дорожка 1х3\nстроить Дорожка 1х4</description>
+		<baseCost>300</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>3.0</researchViewX>
+		<researchViewY>14.0</researchViewY>
+		<prerequisites>
+			<li>SK_HygieneII</li>
+		</prerequisites> 
+	</ResearchProjectDef>
+	
+	<!-- 4 Hygiene-->	
+	<ResearchProjectDef>
+		<defName>SK_HygieneIV</defName>
+		<label>SK_Hygiene IV</label>
+		<description>строить Ванна\nстроить Дверь кабинки\nстроить Бочка для воды\nВетронасос\nСкважина\nТруба</description>
+		<baseCost>400</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>4.0</researchViewX>
+		<researchViewY>14.0</researchViewY>
+		<prerequisites>
+			<li>SK_HygieneIII</li>
+		</prerequisites> 
+	</ResearchProjectDef>
+	
+	<!-- 5 Hygiene-->	
+	<ResearchProjectDef>
+		<defName>SK_HygieneV</defName>
+		<label>SK_Hygiene IV</label>
+		<description>строить Простой душ\nстроить Фонтанчик\nстроить Вентиль</description>
+		<baseCost>500</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>5.0</researchViewX>
+		<researchViewY>14.0</researchViewY>
+		<prerequisites>
+			<li>SK_HygieneIV</li>
+		</prerequisites> 
+	</ResearchProjectDef>
+	
+	<!-- 5 Boiler-->	
+	<ResearchProjectDef>
+		<defName>SK_HygieneBoiler</defName>
+		<label>Boiler</label>
+		<description>строить Дровяной бойлер\nстроить Бак для горячей воды</description>
+		<baseCost>500</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>5.0</researchViewX>
+		<researchViewY>13.0</researchViewY>
+		<prerequisites>
+			<li>SK_HygieneIV</li>
+		</prerequisites> 
+	</ResearchProjectDef>
+	
+	<!-- 1 Cooking-->	
+	<ResearchProjectDef>
+		<defName>SK_CookingI</defName>
+		<label>SK_Cooking I</label>
+		<description>строить Разделочный стол\nРасколоть кокосы\nЗасолить мясо\nсделать Фарш из органов\nРазделать конечности\nПриготовить простой салат</description>
+		<baseCost>100</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>0.0</researchViewX>
+		<researchViewY>15.0</researchViewY>
+	</ResearchProjectDef>
+	
+	<!-- 2 Cooking-->	
+	<ResearchProjectDef>
+		<defName>SK_CookingII</defName>
+		<label>SK_Cooking II</label>
+		<description>строить Гриль\nстроить Кухонный стол\nПростое блюдо</description>
+		<baseCost>500</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>8.0</researchViewX>
+		<researchViewY>15.0</researchViewY>
+		<prerequisites>
+			<li>SK_CookingI</li>
+			<li>SK_Horn</li>	
+			<li>SK_Bread</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!-- 3 Cooking-->	
+	<ResearchProjectDef>
+		<defName>SK_CookingIII</defName>
+		<label>SK_Cooking III</label>
+		<description>строить Твердотопливная плита\nприготовить Вкусное блюдо</description>
+		<baseCost>600</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>9.0</researchViewX>
+		<researchViewY>15.0</researchViewY>
+		<prerequisites>
+			<li>SK_CookingII</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!-- 3 Cooking-->	
+	<ResearchProjectDef>
+		<defName>SK_ElectricCook</defName>
+		<label>Electric Cook</label>
+		<description>строить Эл.плита\nприготовить Фруктовый йогурт\nКухонная полка</description>
+		<baseCost>600</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>9.0</researchViewX>
+		<researchViewY>15.0</researchViewY>
+		<prerequisites>
+			<li>SK_CookingIII</li>
+			<li>SK_ElectronicI</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!-- 3 Cooking-->
+	<ResearchProjectDef>
+		<defName>SK_Cheese</defName>
+		<label>SK_Cheese</label>
+		<description>приготовить Сыр\nсделать Протеин\nполучить Соевое молоко</description>
+		<baseCost>600</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>9.0</researchViewX>
+		<researchViewY>15.6</researchViewY>
+		<prerequisites>
+			<li>SK_CookingII</li>
+		</prerequisites>
+	</ResearchProjectDef>	
+	
+
+	<!-- 3 Cooking-->
+	<ResearchProjectDef>
+		<defName>SK_CookMushrooms</defName>
+		<label>SK_CookMushrooms</label>
+		<description>приготовить Салат с грибами\nПожарить грибы\nприготовить Грибную похлебку</description>
+		<baseCost>600</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>9.0</researchViewX>
+		<researchViewY>16.0</researchViewY>
+		<prerequisites>
+			<li>SK_CookingII</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!-- 3 Cooking-->
+	<ResearchProjectDef>
+		<defName>SK_CookFruitDrink</defName>
+		<label>SK_CookFruitDrink</label>
+		<description>приготовить Фруктовый напиток\nсварить Кофе</description>
+		<baseCost>600</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>9.0</researchViewX>
+		<researchViewY>16.5</researchViewY>
+		<prerequisites>
+			<li>SK_CookingII</li>
+		</prerequisites>
+	</ResearchProjectDef>
+	
+	<!-- 3 Cooking-->
+	<ResearchProjectDef>
+		<defName>SK_CookSandwich</defName>
+		<label>SK_CookSandwich</label>
+		<description>приготовить Бутерброд с сыром</description>
+		<baseCost>600</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>10.0</researchViewX>
+		<researchViewY>15.5</researchViewY>
+		<prerequisites>
+			<li>SK_Bread</li>
+			<li>SK_Cheese</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!-- 3 SK_Pizza-->
+	<ResearchProjectDef>
+		<defName>SK_Pizza</defName>
+		<label>SK_Pizza</label>
+		<description>приготовить Пицца\nЧизбургер</description>
+		<baseCost>700</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>10.0</researchViewX>
+		<researchViewY>15.5</researchViewY>
+		<prerequisites>
+			<li>SK_CookSandwich</li>
+		</prerequisites>
+	</ResearchProjectDef>	
+
+	<!-- 3 Cooking-->
+	<ResearchProjectDef>
+		<defName>SK_Wort</defName>
+		<label>SK_Wort</label>
+		<description>строить Бочка для брожения\nсварить Сусло\nраспаковать ящики\nсварить основу столового Вина\nОснова сидра</description>
+		<baseCost>500</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>9.0</researchViewX>
+		<researchViewY>16.5</researchViewY>
+		<prerequisites>
+			<li>SK_Flour</li>
+			<li>SK_CookingII</li>
+		</prerequisites>
+	</ResearchProjectDef>
+	
+	<!-- 4 SK_WineRum-->
+	<ResearchProjectDef>
+		<defName>SK_WineRum</defName>
+		<label>SK_WineRum</label>
+		<description>сварить Основу Вина\nсварить Основу Рома</description>
+		<baseCost>600</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>9.0</researchViewX>
+		<researchViewY>16.5</researchViewY>
+		<prerequisites>
+			<li>SK_Wort</li>
+		</prerequisites>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>SK_StrongAlcohol</defName>
+		<label>SK_Strong alcohol</label>
+		<description>сварить Основу Текилы\nсварить Основу Водки\nсварить Основу Саке\nсварить Основу Виски</description>
+		<baseCost>600</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>11.0</researchViewX>
+		<researchViewY>16.5</researchViewY>
+		<prerequisites>
+			<li>SK_WineRum</li>
+		</prerequisites>
+	</ResearchProjectDef>	
+	
+	<!-- 1 Pemmican-->	
+	<ResearchProjectDef>
+		<defName>SK_Pemmican</defName>
+		<label>SK_Pemmican</label>
+		<description>Пеммикан\nПеммикан х4\nиспечь Картофель\nЖаренное ассорти из овощей\nЖаренная рыба\nзаварить Чай</description>
+		<baseCost>100</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>0.0</researchViewX>
+		<researchViewY>16.0</researchViewY>
+	</ResearchProjectDef>
+
+	<!-- 1 Flour-->	
+	<ResearchProjectDef>
+		<defName>SK_Flour</defName>
+		<label>SK_Flour</label>
+		<description>строить Каменная молотилка\nполучить Мука\nКукурузная мука\nполучить Сахар\nполучить Дрожжи</description>
+		<baseCost>100</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>0.0</researchViewX>
+		<researchViewY>18.0</researchViewY>
+	</ResearchProjectDef>
+
+	<!-- 2 Bread-->	
+	<ResearchProjectDef>
+		<defName>SK_Bread</defName>
+		<label>SK_Bread</label>
+		<description>строить Печь\nприготовить Хлеб\nКукурузный хлеб(х2)\nКукурузные булочки(х3)</description>
+		<baseCost>200</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>1.0</researchViewX>
+		<researchViewY>17.0</researchViewY>
+		<prerequisites>
+			<li>SK_Flour</li>
+			<li>SK_Pemmican</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!-- 3 SK_Sweets-->
+	<ResearchProjectDef>
+		<defName>SK_Sweets</defName>
+		<label>SK_Sweets</label>
+		<description>Переплавка в сахар\nсделать Карамель\nИриски\nШоколад</description>
+		<baseCost>600</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>10.0</researchViewX>
+		<researchViewY>16.0</researchViewY>
+		<prerequisites>
+			<li>SK_Bread</li>
+		</prerequisites>
+	</ResearchProjectDef>
+	
+	<!-- 3 Burn-->
+	<ResearchProjectDef>
+		<defName>SK_Burn</defName>
+		<label>SK_Burn</label>
+		<description>Сжечь Труп\nСжечь Одежду\nСжечь Предметы\nСжечь Биосолиды до Пепла</description>
+		<baseCost>600</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>0.0</researchViewX>
+		<researchViewY>19.0</researchViewY>
+	</ResearchProjectDef>
+	
+	<!-- 3 Horn-->
+	<ResearchProjectDef>
+		<defName>SK_Horn</defName>
+		<label>SK_Horn</label>
+		<description>строить Горн\nвыплавить Олово\nвыплавить Золотой сплав\nвыплавить Медь\nвыплавить Бронзу\nвыплавить Серебрянный сплав\nсделать Стекольную шихту\nСтекло\nКерамика\nстроить Топливная кузня\nКузнечная печь\nстроить Топливная Кузня раткинов\nполучить Древесный уголь\nизготовить Песчанные блоки</description>
+		<baseCost>600</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>3.0</researchViewX>
+		<researchViewY>19.0</researchViewY>
+		<prerequisites>
+			<li>SK_Burn</li>
+			<li>SK_Bread</li>
+		</prerequisites>
+	</ResearchProjectDef>	
+	
+	<!-- 1 SK_SimpleResearchTable-->
+	<ResearchProjectDef>
+		<defName>SK_SimpleResearchTable</defName>
+		<label>SK_SimpleResearchTable</label>
+		<description>Простой стол для исследований</description>
+		<baseCost>600</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>13.0</researchViewX>
+		<researchViewY>15.0</researchViewY>
+		<prerequisites>
+			<li>SK_Horn</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!-- 2 SK_SimpleResearchTable-->
+	<ResearchProjectDef>
+		<defName>SK_SimpleResearch</defName>
+		<label>SK_SimpleResearch</label>
+		<description>Картотечный шкаф</description>
+		<baseCost>700</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>13.0</researchViewX>
+		<researchViewY>15.0</researchViewY>
+		<prerequisites>
+			<li>SK_SimpleResearchTable</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!-- 3 SK_ResearchTerminal-->
+	<ResearchProjectDef>
+		<defName>SK_ResearchTerminal</defName>
+		<label>Research Terminal</label>
+		<description>Исследовательский терминал</description>
+		<baseCost>800</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>13.0</researchViewX>
+		<researchViewY>15.0</researchViewY>
+		<prerequisites>
+			<li>SK_SimpleResearch</li>
+			<li>SK_ElectronicI</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!-- 4 SK_ResearchHightTech-->
+	<ResearchProjectDef>
+		<defName>SK_ResearchHightTech</defName>
+		<label>Research HightTech</label>
+		<description>Высокотехнологический стол для исследований</description>
+		<baseCost>900</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>13.0</researchViewX>
+		<researchViewY>15.0</researchViewY>
+		<prerequisites>
+			<li>SK_SimpleResearch</li>
+			<li>SK_ElectronicII</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!-- 5 SK_SimpleResearchTable-->
+	<ResearchProjectDef>
+		<defName>SK_ResearchMulti</defName>
+		<label>Research MultiAnalizator</label>
+		<description>Мультианализатор</description>
+		<baseCost>1000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>13.0</researchViewX>
+		<researchViewY>15.0</researchViewY>
+		<prerequisites>
+			<li>SK_ResearchHightTech</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!-- 6 SK_SimpleResearchTable-->
+	<ResearchProjectDef>
+		<defName>SK_ResearcLab</defName>
+		<label>Research Lab</label>
+		<description>Лабораторная станция</description>
+		<baseCost>1200</baseCost>
+		<techLevel>Spacer</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>13.0</researchViewX>
+		<researchViewY>15.0</researchViewY>
+		<prerequisites>
+			<li>SK_ResearchMulti</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!-- 3 Quarry-->
+	<ResearchProjectDef>
+		<defName>SK_Quarry</defName>
+		<label>SK_Quarry</label>
+		<description>Карьер\nБольшой карьер\nКарьерная платформа</description>
+		<baseCost>600</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>13.0</researchViewX>
+		<researchViewY>15.0</researchViewY>
+		<prerequisites>
+			<li>SK_Horn</li>
+		</prerequisites>
+	</ResearchProjectDef>
+	
+	<!-- 1 Oil-->
+	<ResearchProjectDef>
+		<defName>SK_OilI</defName>
+		<label>SK_OilI</label>
+		<description>Буровая установка\nМобильный Сонар минералов\nКарьерная платформа</description>
+		<baseCost>600</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>13.0</researchViewX>
+		<researchViewY>15.0</researchViewY>
+		<prerequisites>
+			<li>SK_ElectronicI</li>
+			<li>SK_Quarry</li>			
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!-- 2 Oil-->
+	<ResearchProjectDef>
+		<defName>SK_OilI</defName>
+		<label>SK_OilI</label>
+		<description>Буровая установка\nМобильный Сонар минералов\nКарьерная платформа</description>
+		<baseCost>600</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>13.0</researchViewX>
+		<researchViewY>15.0</researchViewY>
+		<prerequisites>
+			<li>SK_ElectronicI</li>
+			<li>SK_Quarry</li>			
+		</prerequisites>
+	</ResearchProjectDef>
+	<!-- 1 Oil-->
+	<ResearchProjectDef>
+		<defName>SK_OilV</defName>
+		<label>Oil Lab</label>
+		<description>Лаборатория\nПластик\nРезина\nКаучук</description>
+		<baseCost>600</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>13.0</researchViewX>
+		<researchViewY>15.0</researchViewY>
+		<prerequisites>
+			<li>SK_ElectronicI</li>
+		</prerequisites>
+	</ResearchProjectDef>
+	<!-- 1 Oil-->
+	<ResearchProjectDef>
+		<defName>SK_Syntetic</defName>
+		<label>SK_Syntetic</label>
+		<description>Синтетические волокна\nКарбон\nКомпозитный сплав</description>
+		<baseCost>600</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>13.0</researchViewX>
+		<researchViewY>15.0</researchViewY>
+		<prerequisites>
+			<li>SK_ElectronicI</li>
+			<li>SK_Quarry</li>			
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!-- 1 Energy-->
+	<ResearchProjectDef>
+		<defName>SK_EnergyI</defName>
+		<label>SK_Energy I</label>
+		<description>Генератор на дровах\nПереключатель\nКабель\nПодводный кабель</description>
+		<baseCost>600</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>13.0</researchViewX>
+		<researchViewY>15.0</researchViewY>
+	</ResearchProjectDef>
+	
+	<!-- 1 Energy-->
+	<ResearchProjectDef>
+		<defName>SK_EnergyII</defName>
+		<label>SK_Energy II</label>
+		<description>Водяной генератор</description>
+		<baseCost>800</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>13.0</researchViewX>
+		<researchViewY>15.0</researchViewY>
+		<prerequisites>
+			<li>SK_EnergyI</li>			
+		</prerequisites>		
+	</ResearchProjectDef>
+
+	<!-- 1 Electronic-->
+	<ResearchProjectDef>
+		<defName>SK_ElectronicI</defName>
+		<label>SK_Electronic</label>
+		<description>Мастерская электроники\nЭлектронные компонены\nразобрать Силовой щит</description>
+		<baseCost>800</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>13.0</researchViewX>
+		<researchViewY>15.0</researchViewY>
+		<prerequisites>
+			<li>SK_EnergyI</li>			
+		</prerequisites>		
+	</ResearchProjectDef>
+
+	<!-- 2 Electronic-->
+	<ResearchProjectDef>
+		<defName>SK_ElectronicII</defName>
+		<label>SK_Electronic II</label>
+		<description>собрать Интегральная схема</description>
+		<baseCost>800</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>13.0</researchViewX>
+		<researchViewY>15.0</researchViewY>
+		<prerequisites>
+			<li>SK_ElectronicI</li>			
+		</prerequisites>		
+	</ResearchProjectDef>
+
+	<!-- 3 Armor-->
+	<ResearchProjectDef>
+		<defName>SK_Armor</defName>
+		<label>SK_Armor</label>
+		<description>Шлем\nМорион\nДоспехи...</description>
+		<baseCost>600</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>14.0</researchViewX>
+		<researchViewY>15.0</researchViewY>
+		<prerequisites>
+			<li>SK_Horn</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!-- 3 Tailor-->
+	<ResearchProjectDef>
+		<defName>SK_TailorII</defName>
+		<label>SK_Tailor II</label>
+		<description>Ткацкий станок\nСтол портного\nЛоскутная кожа\nТкань\nКоноплянное полотно\nПалатки 3 видов</description>
+		<baseCost>600</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>14.0</researchViewX>
+		<researchViewY>16.0</researchViewY>
+		<prerequisites>
+			<li>SK_Horn</li>
+			<li>SK_TailorI</li>			
+		</prerequisites>
+	</ResearchProjectDef>
+	
+	<!-- 3 Tailor-->
+	<ResearchProjectDef>
+		<defName>SK_TailorI</defName>
+		<label>SK_Tailor I</label>
+		<description>Верстак кожевника\nЩит туземца\nНабедренная повязка\nШапка с рогами\nЦеремониальная шляпа\nТуника</description>
+		<baseCost>100</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>0.0</researchViewX>
+		<researchViewY>16.0</researchViewY>
+	</ResearchProjectDef>		
+
+	<!-- 3 SK_StoneCutII-->
+	<ResearchProjectDef>
+		<defName>SK_StoneCutII</defName>
+		<label>SK_StoneCut II</label>
+		<description>Стол для резки камня\nКаменные блоки в щебень\nЩебень в Песок\nОбломок камня в Песок\nОбломок камня в Щебень</description>
+		<baseCost>300</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>0.0</researchViewX>
+		<researchViewY>16.0</researchViewY>
+		<prerequisites>
+			<li>SK_Horn</li>
+		</prerequisites>		
+	</ResearchProjectDef>
+
+	<!-- 5 SK_Workbench-->
+	<ResearchProjectDef>
+		<defName>SK_Workbench</defName>
+		<label>SK_Workbench</label>
+		<description>Верстак\nПереработать Механоида</description>
+		<baseCost>500</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>0.0</researchViewX>
+		<researchViewY>16.0</researchViewY>
+		<prerequisites>
+			<li>SK_StoneCutII</li>
+			<li>SK_ElectronicI</li>
+		</prerequisites>		
+	</ResearchProjectDef>
+	
+	<!-- 3 SK_Concrete-->
+	<ResearchProjectDef>
+		<defName>SK_Concrete</defName>
+		<label>SK_Concrete</label>
+		<description>Бетономешалка\nБетон\nЖелезобетонный блок</description>
+		<baseCost>600</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>0.0</researchViewX>
+		<researchViewY>16.0</researchViewY>
+		<prerequisites>
+			<li>SK_StoneCutII</li>
+		</prerequisites>		
+	</ResearchProjectDef>
+
+	<!-- 1 Art-->	
+	<ResearchProjectDef>
+		<defName>SK_Paint</defName>
+		<label>SK_Paint</label>
+		<description>Нарисовать картину\nсоздать Набор красок</description>
+		<baseCost>100</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>0.0</researchViewX>
+		<researchViewY>17.0</researchViewY>
+	</ResearchProjectDef>
+
+	<!-- 2 Art-->
+	<ResearchProjectDef>
+		<defName>SK_Art</defName>
+		<label>SK_Art</label>
+		<description>Мастерская художника</description>
+		<baseCost>200</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>1.0</researchViewX>
+		<researchViewY>17.0</researchViewY>
+		<prerequisites>
+			<li>SK_Paint</li>
+			<li>SK_StoneCutII</li>			
+		</prerequisites>		
+	</ResearchProjectDef>
+
+	<!-- 3 Art-->
+	<ResearchProjectDef>
+		<defName>SK_ArtII</defName>
+		<label>SK_ArtII</label>
+		<description>Скульптуры малые</description>
+		<baseCost>300</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>5.0</researchViewX>
+		<researchViewY>17.0</researchViewY>
+		<prerequisites>
+			<li>SK_Art</li>			
+		</prerequisites>		
+	</ResearchProjectDef>	
+
+	<!-- 4 Art-->
+	<ResearchProjectDef>
+		<defName>SK_ArtIII</defName>
+		<label>SK_Art III</label>
+		<description>Скульптуры большие</description>
+		<baseCost>400</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>7.0</researchViewX>
+		<researchViewY>17.0</researchViewY>
+		<prerequisites>
+			<li>SK_ArtII</li>			
+		</prerequisites>		
+	</ResearchProjectDef>	
+
+	<!-- 5 Art-->
+	<ResearchProjectDef>
+		<defName>SK_ArtIV</defName>
+		<label>SK_Art IV именные</label>
+		<description>Скульптуры именные</description>
+		<baseCost>500</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>8.0</researchViewX>
+		<researchViewY>17.0</researchViewY>
+		<prerequisites>
+			<li>SK_ArtIII</li>			
+		</prerequisites>		
+	</ResearchProjectDef>
+	
+	<!-- 3 Bandage-->
+	<ResearchProjectDef>
+		<defName>SK_Bandage</defName>
+		<label>SK_Bandage</label>
+		<description>Бинт</description>
+		<baseCost>300</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>16.0</researchViewX>
+		<researchViewY>20.0</researchViewY>
+		<prerequisites>
+			<li>SK_TailorII</li>
+		</prerequisites>		
+	</ResearchProjectDef>
+
+	<!-- 1 Animal-->
+	<ResearchProjectDef>
+		<defName>SK_AnimalI</defName>
+		<label>SK_Animal I</label>
+		<description>Выращивать Сенотраву\nВыращивать Куст\nСемена Сенотравы\nСпальник для животного</description>
+		<baseCost>100</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>0.0</researchViewX>
+		<researchViewY>22.0</researchViewY>
+	</ResearchProjectDef>
+
+	<!-- 2 Animal-->
+	<ResearchProjectDef>
+		<defName>SK_AnimalII</defName>
+		<label>SK_Animal II</label>
+		<description>Силос\nКомбикорм\nКошачья еда\nКогтеточка\nКошачья миска</description>
+		<baseCost>300</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>3.0</researchViewX>
+		<researchViewY>22.0</researchViewY>
+		<prerequisites>
+			<li>SK_AnimalI</li>
+		</prerequisites>		
+	</ResearchProjectDef>
+
+	<!-- 3 Animal-->
+	<ResearchProjectDef>
+		<defName>SK_AnimalIII</defName>
+		<label>SK_Animal III</label>
+		<description>Подушка для животного\nКровать для животного</description>
+		<baseCost>300</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>3.0</researchViewX>
+		<researchViewY>22.0</researchViewY>
+		<prerequisites>
+			<li>SK_AnimalII</li>
+		</prerequisites>		
+	</ResearchProjectDef>
+	
+	<!-- 1 fishing-->
+	<ResearchProjectDef>
+		<defName>SK_FishingI</defName>
+		<label>SK_Fishing I</label>
+		<description>Пирс для рыбалки\nПирс для рыбалки в болоте\nНаживка\nСпальник для животного</description>
+		<baseCost>100</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>0.0</researchViewX>
+		<researchViewY>25.0</researchViewY>
+	</ResearchProjectDef>
+
+	<!-- 2 fishing-->
+	<ResearchProjectDef>
+		<defName>SK_FishingII</defName>
+		<label>SK_Fishing II</label>
+		<description>Бассейн для рыбы\nВыпустить икру рыб(3 вида)</description>
+		<baseCost>500</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>0.0</researchViewX>
+		<researchViewY>25.0</researchViewY>
+		<prerequisites>
+			<li>SK_FishingI</li>
+			<li>SK_ElectronicII</li>
+		</prerequisites>		
+	</ResearchProjectDef>	
+	<!--  
+\n\n\n\n\n\n
+
+  <researchViewX>0.00</researchViewX>   палец
+  <researchViewY>1.10</researchViewY>
+  
+
+SK_AdvanchedBowI
+  <researchViewX>2.00</researchViewX>
+  <researchViewY>0.00</researchViewY>
+
+		<techLevel>Neolithic</techLevel>
+<techLevel>Industrial</techLevel>
+<techLevel>Spacer</techLevel>
+-->
+
+	
+</Defs>	

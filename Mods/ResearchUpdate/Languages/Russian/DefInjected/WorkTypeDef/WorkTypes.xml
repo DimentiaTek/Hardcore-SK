@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--suppress ALL -->
+<LanguageData>
+	
+	<Diplomat.labelShort>Дипломат</Diplomat.labelShort>
+	<Diplomat.pawnLabel>переговорщик</Diplomat.pawnLabel>
+	<Diplomat.gerundLabel>Общаться</Diplomat.gerundLabel>
+	<Diplomat.description>Дипломаты общаются с гостями и строят с ними дружбу.</Diplomat.description>
+	<Diplomat.verb>разговаривать</Diplomat.verb>
+
+</LanguageData>
