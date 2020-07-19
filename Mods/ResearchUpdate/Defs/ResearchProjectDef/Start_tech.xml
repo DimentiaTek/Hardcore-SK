@@ -1178,21 +1178,51 @@
 		</prerequisites>
 	</ResearchProjectDef>
 
-	<!-- 2 Oil-->
+	<!-- 2 SK_OilConsole-->
 	<ResearchProjectDef>
-		<defName>SK_OilI</defName>
-		<label>SK_OilI</label>
-		<description>Буровая установка\nМобильный Сонар минералов\nКарьерная платформа</description>
-		<baseCost>600</baseCost>
+		<defName>SK_OilConsole</defName>
+		<label>SK_OilConsole</label>
+		<description>Консоль ресурсов\nХранилище сырой нефти\nНефтяная скважина\nТрубопроводный клапан\nНефтепровод\nТруба</description>
+		<baseCost>700</baseCost>
 		<techLevel>Industrial</techLevel>
 		<tab>RangedCombat</tab>
 		<researchViewX>13.0</researchViewX>
 		<researchViewY>15.0</researchViewY>
 		<prerequisites>
-			<li>SK_ElectronicI</li>
-			<li>SK_Quarry</li>			
+			<li>SK_OilI</li>
 		</prerequisites>
 	</ResearchProjectDef>
+
+	<!-- 3 Oil-->
+	<ResearchProjectDef>
+		<defName>SK_OilStorageChemicalFuel</defName>
+		<label>Storage ChemicalFuel</label>
+		<description>Расщепитель сырья\nХранилище хим топлива\nНасос химтоплива\nСифон хим топлива</description>
+		<baseCost>800</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>13.0</researchViewX>
+		<researchViewY>15.0</researchViewY>
+		<prerequisites>
+			<li>SK_OilConsole</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!-- 3 Oil-->
+	<ResearchProjectDef>
+		<defName>SK_BiofuelRefinery</defName>
+		<label>Biofuel Refinery</label>
+		<description>Расщепитель сырья\nХранилище хим топлива\nНасос химтоплива\nСифон хим топлива</description>
+		<baseCost>800</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>13.0</researchViewX>
+		<researchViewY>15.0</researchViewY>
+		<prerequisites>
+			<li>SK_OilConsole</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
 	<!-- 1 Oil-->
 	<ResearchProjectDef>
 		<defName>SK_OilV</defName>
@@ -1543,4 +1573,4 @@ SK_AdvanchedBowI
 -->
 
 	
-</Defs>	
+</Defs>
