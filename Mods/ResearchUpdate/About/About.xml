@@ -5,7 +5,6 @@
 	<supportedVersions>
 		<li>1.1</li>
 	</supportedVersions>
-	<packageId>Dimentia.DimentiaPatch</packageId>
-	<description>Adds patch</description>
+	<description>Research patch</description>
 	<url></url>
 </ModMetaData>
