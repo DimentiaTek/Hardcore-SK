@@ -308,7 +308,7 @@
 	<ResearchProjectDef>
 		<defName>SK_Lamp</defName>
 		<label>SK_Lamp</label>
-		<description>Лампа\nНапольная лампа?</description>
+		<description>Лампа\nНапольная лампа</description>
 		<baseCost>500</baseCost>
 		<techLevel>Industrial</techLevel>
 		<tab>RangedCombat</tab>
@@ -323,7 +323,7 @@
 	<!-- 5 Light-->	
 	<ResearchProjectDef>
 		<defName>SK_LampI</defName>
-		<label>Light I</label>
+		<label>Lamp Out Wall Celling</label>
 		<description>Внешняя Лампа\nНастенная лампа\nПотолочная лампа</description>
 		<baseCost>500</baseCost>
 		<techLevel>Industrial</techLevel>
@@ -331,15 +331,14 @@
 		<researchViewX>3.0</researchViewX>
 		<researchViewY>2.0</researchViewY>
 		<prerequisites>
-			<li>SK_LightI</li>
-			<li>SK_EnergyI</li>			
+			<li>SK_Lamp</li>
 		</prerequisites>
 	</ResearchProjectDef>
 	
 	<!-- 5 Light-->	
 	<ResearchProjectDef>
 		<defName>SK_LampColor</defName>
-		<label>SK_LampColor</label>
+		<label>Lamp Color</label>
 		<description>Красная Лампа\nЗаленая лампа\nСиняя лампа</description>
 		<baseCost>600</baseCost>
 		<techLevel>Industrial</techLevel>
@@ -350,12 +349,28 @@
 			<li>SK_LampI</li>
 		</prerequisites>
 	</ResearchProjectDef>
+
+	<!-- 6 Light-->	
+	<ResearchProjectDef>
+		<defName>SK_FloorLamp</defName>
+		<label>Floor Lamp</label>
+		<description>Подсветка пола\nцыетная подсветка пола</description>
+		<baseCost>700</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>3.0</researchViewX>
+		<researchViewY>2.0</researchViewY>
+		<prerequisites>
+			<li>SK_LampColor</li>
+			<li>SK_TableChemlab</li>
+		</prerequisites>
+	</ResearchProjectDef>
 	
 	<!-- 6 Light-->	
 	<ResearchProjectDef>
 		<defName>SK_LampII</defName>
-		<label>Light II</label>
-		<description>Настенный фонарь\nНапольная лампа?</description>
+		<label>Настенный фонарь</label>
+		<description>Настенный фонарь\nНапольная лампа?(повторяется)</description>
 		<baseCost>600</baseCost>
 		<techLevel>Industrial</techLevel>
 		<tab>RangedCombat</tab>
@@ -363,13 +378,14 @@
 		<researchViewY>2.0</researchViewY>
 		<prerequisites>
 			<li>SK_LampI</li>
+			<li>SK_TableChemlab</li>
 		</prerequisites>
 	</ResearchProjectDef>
 
 	<!-- 7 Light-->	
 	<ResearchProjectDef>
 		<defName>SK_LampIII</defName>
-		<label>SK_LampIII</label>
+		<label>Светодиодный дюралайт</label>
 		<description>Светодиодный дюралайт</description>
 		<baseCost>700</baseCost>
 		<techLevel>Industrial</techLevel>
@@ -391,9 +407,6 @@
 		<tab>RangedCombat</tab>
 		<researchViewX>3.0</researchViewX>
 		<researchViewY>3.0</researchViewY>
-<!--		<prerequisites>
-			<li>SK_АccessoriesII</li>
-		</prerequisites>    -->
 	</ResearchProjectDef>
 	
 	<!-- 3 Defend-->	
@@ -1112,8 +1125,9 @@
 		<researchViewX>13.0</researchViewX>
 		<researchViewY>15.0</researchViewY>
 		<prerequisites>
-			<li>SK_SimpleResearch</li>
+			<li>SK_ResearchTerminal</li>
 			<li>SK_ElectronicII</li>
+			<li>SK_Syntetic</li>
 		</prerequisites>
 	</ResearchProjectDef>
 
@@ -1208,6 +1222,51 @@
 		</prerequisites>
 	</ResearchProjectDef>
 
+	<!-- 4 Oil-->
+	<ResearchProjectDef>
+		<defName>SK_OilRefineryStuff</defName>
+		<label>Refinery Stuff</label>
+		<description>Разгрузочная платформа переработчика\nПереработчик полимеров\nПереработчик сульфатов\nПереработчик напалма</description>
+		<baseCost>900</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>13.0</researchViewX>
+		<researchViewY>15.0</researchViewY>
+		<prerequisites>
+			<li>SK_OilStorageChemicalFuel</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!-- 5 Oil-->
+	<ResearchProjectDef>
+		<defName>SK_OilRefineryParaffin</defName>
+		<label>Refinery Paraffin</label>
+		<description>Переработчик парафина\nПереработчик синт аммиака</description>
+		<baseCost>1000</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>13.0</researchViewX>
+		<researchViewY>15.0</researchViewY>
+		<prerequisites>
+			<li>SK_OilRefineryStuff</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!-- 1 DeepScaner-->
+	<ResearchProjectDef>
+		<defName>GroundPenetratingScanner</defName> 	<!-- GroundPenetratingScanner -->
+		<label>Ground Penetrating Scanner</label>
+		<description>Глубинный сканнер\nДобывающая установка</description>
+		<baseCost>900</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>13.0</researchViewX>
+		<researchViewY>15.0</researchViewY>
+		<prerequisites>
+			<li>SK_OilI</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
 	<!-- 3 Oil-->
 	<ResearchProjectDef>
 		<defName>SK_BiofuelRefinery</defName>
@@ -1223,21 +1282,52 @@
 		</prerequisites>
 	</ResearchProjectDef>
 
+	<!-- 4 Oil-->
+	<ResearchProjectDef>
+		<defName>SK_DrugLab</defName>
+		<label>DrugLab</label>
+		<description>химическая лаборатория(изготовления разных видов препаратов и наркотиков)\nБио переработчик\nБиодизель\nБоевой напалм х40\nСжиженный прометиум х40</description>
+		<baseCost>900</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>13.0</researchViewX>
+		<researchViewY>15.0</researchViewY>
+		<prerequisites>
+			<li>SK_BiofuelRefinery</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
 	<!-- 5 Oil-->
 	<ResearchProjectDef>
-		<defName>SK_OilV</defName>
-		<label>Oil Lab</label>
-		<description>Лаборатория\nПластик\nРезина\nКаучук</description>
+		<defName>SK_NapalmTrap</defName>
+		<label>Napalm Trap</label>
+		<description>строить След напалма\nстроить Напалмовая бомба\nстроить Сеть искрового разряда</description>
+		<baseCost>900</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>13.0</researchViewX>
+		<researchViewY>15.0</researchViewY>
+		<prerequisites>
+			<li>SK_DrugLab</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!-- 5 Oil-->
+	<ResearchProjectDef>
+		<defName>SK_TableChemlab</defName>
+		<label>TableChemLab</label>
+		<description>Лаборатория(используемая для изготовления медикаментов, обезболивающих и искусственных костей)\nПластик\nРезина\nКаучук</description>
 		<baseCost>600</baseCost>
 		<techLevel>Industrial</techLevel>
 		<tab>RangedCombat</tab>
 		<researchViewX>13.0</researchViewX>
 		<researchViewY>15.0</researchViewY>
 		<prerequisites>
-			<li>SK_ElectronicI</li>
+			<li>SK_OilRefineryStuff</li>
 		</prerequisites>
 	</ResearchProjectDef>
-	<!-- 1 Oil-->
+
+	<!-- 6 Oil-->
 	<ResearchProjectDef>
 		<defName>SK_Syntetic</defName>
 		<label>SK_Syntetic</label>
@@ -1248,12 +1338,12 @@
 		<researchViewX>13.0</researchViewX>
 		<researchViewY>15.0</researchViewY>
 		<prerequisites>
-			<li>SK_ElectronicI</li>
-			<li>SK_Quarry</li>			
+			<li>SK_TableChemlab</li>			
 		</prerequisites>
 	</ResearchProjectDef>
 
 	<!-- 1 Energy-->
+	<!-- SK_ConvectionalI -->
 	<ResearchProjectDef>
 		<defName>SK_EnergyI</defName>
 		<label>SK_Energy I</label>
@@ -1270,7 +1360,7 @@
 		<defName>SK_EnergyII</defName>
 		<label>SK_Energy II</label>
 		<description>Водяной генератор</description>
-		<baseCost>800</baseCost>
+		<baseCost>700</baseCost>
 		<techLevel>Medieval</techLevel>
 		<tab>RangedCombat</tab>
 		<researchViewX>13.0</researchViewX>
@@ -1278,6 +1368,67 @@
 		<prerequisites>
 			<li>SK_EnergyI</li>			
 		</prerequisites>		
+	</ResearchProjectDef>
+
+	<!-- 2 Energy-->
+	<ResearchProjectDef>
+		<defName>SK_EnergyBio</defName>
+		<label>Energy Bio</label>
+		<description>Био генератор</description>
+		<baseCost>700</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>13.0</researchViewX>
+		<researchViewY>15.0</researchViewY>
+		<prerequisites>
+			<li>SK_EnergyI</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!-- 3 Energy-->
+	<ResearchProjectDef>
+		<defName>SK_EnergyCoil</defName>
+		<label>Energy Coil</label>
+		<description>Угольная Электростанция</description>
+		<baseCost>800</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>13.0</researchViewX>
+		<researchViewY>15.0</researchViewY>
+		<prerequisites>
+			<li>SK_EnergyBio</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!-- 4 Energy-->
+	<ResearchProjectDef>
+		<defName>SK_EnergyFuel</defName>
+		<label>Energy Fuel</label>
+		<description>Электростанция на топливе\nГенератор на хим топливе</description>
+		<baseCost>900</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>13.0</researchViewX>
+		<researchViewY>15.0</researchViewY>
+		<prerequisites>
+			<li>SK_EnergyCoil</li>
+			<li>SK_DrugLab</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!-- 4 Energy-->
+	<ResearchProjectDef>
+		<defName>SK_EnergyFuelBig</defName>
+		<label>Energy Fuel Big</label>
+		<description>Большая Электростанция на топливе</description>
+		<baseCost>1000</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>13.0</researchViewX>
+		<researchViewY>15.0</researchViewY>
+		<prerequisites>
+			<li>SK_EnergyFuel</li>
+		</prerequisites>
 	</ResearchProjectDef>
 
 	<!-- 1 Electronic-->
@@ -1298,15 +1449,47 @@
 	<!-- 2 Electronic-->
 	<ResearchProjectDef>
 		<defName>SK_ElectronicII</defName>
-		<label>SK_Electronic II</label>
+		<label>IntegratedCircuits</label>
 		<description>собрать Интегральная схема</description>
-		<baseCost>800</baseCost>
+		<baseCost>900</baseCost>
 		<techLevel>Industrial</techLevel>
 		<tab>RangedCombat</tab>
 		<researchViewX>13.0</researchViewX>
 		<researchViewY>15.0</researchViewY>
 		<prerequisites>
 			<li>SK_ElectronicI</li>			
+		</prerequisites>		
+	</ResearchProjectDef>
+	
+	<!-- 1 Tools -->
+	<ResearchProjectDef>
+		<defName>SK_Small_ToolCabinet</defName>
+		<label>Small ToolCabinet</label>
+		<description>Малый шкаф с инструментами</description>
+		<baseCost>1000</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>13.0</researchViewX>
+		<researchViewY>15.0</researchViewY>
+		<prerequisites>
+			<li>SK_ElectronicI</li>
+			<li>SK_TableChemlab</li>
+		</prerequisites>		
+	</ResearchProjectDef>
+
+	<!-- 2 Tools -->
+	<ResearchProjectDef>
+		<defName>SK_ToolCabinet</defName>
+		<label>Tool Cabinet</label>
+		<description>Шкаф для инструментов</description>
+		<baseCost>1000</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>13.0</researchViewX>
+		<researchViewY>15.0</researchViewY>
+		<prerequisites>
+			<li>SK_Small_ToolCabinet</li>
+			<li>SK_ElectronicII</li>
 		</prerequisites>		
 	</ResearchProjectDef>
 
@@ -1484,7 +1667,7 @@
 		<researchViewY>20.0</researchViewY>
 		<prerequisites>
 			<li>SK_TailorII</li>
-		</prerequisites>		
+		</prerequisites>
 	</ResearchProjectDef>
 
 	<!-- 1 Animal-->
@@ -1511,7 +1694,7 @@
 		<researchViewY>22.0</researchViewY>
 		<prerequisites>
 			<li>SK_AnimalI</li>
-		</prerequisites>		
+		</prerequisites>
 	</ResearchProjectDef>
 
 	<!-- 3 Animal-->
@@ -1526,7 +1709,7 @@
 		<researchViewY>22.0</researchViewY>
 		<prerequisites>
 			<li>SK_AnimalII</li>
-		</prerequisites>		
+		</prerequisites>
 	</ResearchProjectDef>
 	
 	<!-- 1 fishing-->
@@ -1554,22 +1737,19 @@
 		<prerequisites>
 			<li>SK_FishingI</li>
 			<li>SK_ElectronicII</li>
-		</prerequisites>		
-	</ResearchProjectDef>	
-	<!--  
+		</prerequisites>
+	</ResearchProjectDef>
+
+<!--  
 \n\n\n\n\n\n
 
-  <researchViewX>0.00</researchViewX>   палец
-  <researchViewY>1.10</researchViewY>
-  
 
-SK_AdvanchedBowI
-  <researchViewX>2.00</researchViewX>
-  <researchViewY>0.00</researchViewY>
-
-		<techLevel>Neolithic</techLevel>
+<techLevel>Neolithic</techLevel>
+<techLevel>Medieval</techLevel>
 <techLevel>Industrial</techLevel>
 <techLevel>Spacer</techLevel>
+<techLevel>Ultra</techLevel>
+
 -->
 
 	
