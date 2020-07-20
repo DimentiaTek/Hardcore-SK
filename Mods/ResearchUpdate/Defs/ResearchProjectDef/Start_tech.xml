@@ -1126,7 +1126,7 @@
 		<researchViewY>15.0</researchViewY>
 		<prerequisites>
 			<li>SK_ResearchTerminal</li>
-			<li>SK_ElectronicII</li>
+			<li>IntegratedCircuits</li>
 			<li>SK_Syntetic</li>
 		</prerequisites>
 	</ResearchProjectDef>
@@ -1254,7 +1254,7 @@
 
 	<!-- 1 DeepScaner-->
 	<ResearchProjectDef>
-		<defName>GroundPenetratingScanner</defName> 	<!-- GroundPenetratingScanner -->
+		<defName>SK_GroundPenetratingScanner</defName> 	<!-- GroundPenetratingScanner -->
 		<label>Ground Penetrating Scanner</label>
 		<description>Глубинный сканнер\nДобывающая установка</description>
 		<baseCost>900</baseCost>
@@ -1264,6 +1264,52 @@
 		<researchViewY>15.0</researchViewY>
 		<prerequisites>
 			<li>SK_OilI</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!-- 2 DeepScaner-->
+	<ResearchProjectDef>
+		<defName>SK_DeepDrillII</defName>
+		<label>UpdDeepDril</label>
+		<description>Усиленный сканнер\nУлучшенная Добывающая установка</description>
+		<baseCost>1000</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>13.0</researchViewX>
+		<researchViewY>15.0</researchViewY>
+		<prerequisites>
+			<li>SK_GroundPenetratingScanner</li>
+			<li>IntegratedCircuits</li>			
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!-- 3 DeepScaner-->
+	<ResearchProjectDef>
+		<defName>SK_DeepOil</defName>
+		<label>Deep Oil</label>
+		<description>Глубокая нефтяная скважина</description>
+		<baseCost>1000</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>13.0</researchViewX>
+		<researchViewY>15.0</researchViewY>
+		<prerequisites>
+			<li>SK_DeepDrillII</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!-- 3 DeepScaner-->
+	<ResearchProjectDef>
+		<defName>SK_LongRangeScanner</defName>
+		<label>LongRangeScanner</label>
+		<description>Сканер минералов дальнего действия</description>
+		<baseCost>1100</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>13.0</researchViewX>
+		<researchViewY>15.0</researchViewY>
+		<prerequisites>
+			<li>SK_DeepDrillII</li>
 		</prerequisites>
 	</ResearchProjectDef>
 
@@ -1346,28 +1392,226 @@
 	<!-- SK_ConvectionalI -->
 	<ResearchProjectDef>
 		<defName>SK_EnergyI</defName>
-		<label>SK_Energy I</label>
+		<label>Генератор на дровах</label>
 		<description>Генератор на дровах\nПереключатель\nКабель\nПодводный кабель</description>
 		<baseCost>600</baseCost>
-		<techLevel>Medieval</techLevel>
+		<techLevel>Industrial</techLevel>
 		<tab>RangedCombat</tab>
 		<researchViewX>13.0</researchViewX>
 		<researchViewY>15.0</researchViewY>
 	</ResearchProjectDef>
-	
-	<!-- 1 Energy-->
+
+	<!-- 2 EnergyFuse -->
 	<ResearchProjectDef>
-		<defName>SK_EnergyII</defName>
-		<label>SK_Energy II</label>
-		<description>Водяной генератор</description>
+		<defName>SK_EnergyFuse</defName>
+		<label>Fuse Switch</label>
+		<description>Предохранитель\nПолуавтоматический Переключатель</description>
 		<baseCost>700</baseCost>
-		<techLevel>Medieval</techLevel>
+		<techLevel>Industrial</techLevel>
 		<tab>RangedCombat</tab>
 		<researchViewX>13.0</researchViewX>
 		<researchViewY>15.0</researchViewY>
 		<prerequisites>
-			<li>SK_EnergyI</li>			
-		</prerequisites>		
+			<li>SK_EnergyI</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!-- 3 EnergyBattery -->
+	<ResearchProjectDef>
+		<defName>SK_EnergyBattery</defName>
+		<label>Energy Battery</label>
+		<description>Аккумулятор\nСуточный коммутатор\nУсиленный кабель\nСкрытый кабель</description>
+		<baseCost>800</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>13.0</researchViewX>
+		<researchViewY>15.0</researchViewY>
+		<prerequisites>
+			<li>SK_EnergyFuse</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!-- 1 Trade -->
+	<ResearchProjectDef>
+		<defName>SK_TradeBeacon</defName>
+		<label>TradeBeacon</label>
+		<description>Консоль связи\nТорговый маяк</description>
+		<baseCost>900</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>13.0</researchViewX>
+		<researchViewY>15.0</researchViewY>
+		<prerequisites>
+			<li>SK_EnergyBattery</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!-- 2 Trade -->
+	<ResearchProjectDef>
+		<defName>SK_TradeTransponder</defName>
+		<label>TradeTransponder</label>
+		<description>Консоль связи\nТорговый маяк</description>
+		<baseCost>1000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>13.0</researchViewX>
+		<researchViewY>15.0</researchViewY>
+		<prerequisites>
+			<li>SK_TradeBeacon</li>
+			<li>SK_ResearchHightTech</li>			
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!-- 4 EnergyTimer -->
+	<ResearchProjectDef>
+		<defName>SK_EnergyTimer</defName>
+		<label>Energy Timer</label>
+		<description>Переключатели Таймер</description>
+		<baseCost>900</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>13.0</researchViewX>
+		<researchViewY>15.0</researchViewY>
+		<prerequisites>
+			<li>SK_EnergyBattery</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!-- 5 EnergyMotionSensor -->
+	<ResearchProjectDef>
+		<defName>SK_EnergyMotionSensor</defName>
+		<label>Motion Sensor</label>
+		<description>Переключатели Датчик движения</description>
+		<baseCost>1000</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>13.0</researchViewX>
+		<researchViewY>15.0</researchViewY>
+		<prerequisites>
+			<li>SK_EnergyTimer</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!-- 6 EnergyMotionSensor -->
+	<ResearchProjectDef>
+		<defName>SK_EnergyEnemySensor</defName>
+		<label>Enemy Sensor</label>
+		<description>Переключатели Детектор обнаружения противника</description>
+		<baseCost>1100</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>13.0</researchViewX>
+		<researchViewY>15.0</researchViewY>
+		<prerequisites>
+			<li>SK_EnergyMotionSensor</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!-- 2 Energy-->
+	<ResearchProjectDef>
+		<defName>SK_EnergyWater</defName>
+		<label>Водяной генератор</label>
+		<description>Водяной генератор</description>
+		<baseCost>700</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>13.0</researchViewX>
+		<researchViewY>15.0</researchViewY>
+		<prerequisites>
+			<li>SK_EnergyI</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!-- 3 Energy-->
+	<ResearchProjectDef>
+		<defName>SK_EnergyWind</defName>
+		<label>Energy Wind</label>
+		<description>Ветрогенератор\nХомячье колесо(раткин)</description>
+		<baseCost>800</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>13.0</researchViewX>
+		<researchViewY>15.0</researchViewY>
+		<prerequisites>
+			<li>SK_EnergyWater</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!-- 4 Energy-->
+	<ResearchProjectDef>
+		<defName>SK_EnergySolar</defName>
+		<label>Energy Solar</label>
+		<description>Солнечная батарея\nКонтроллер солнечных батарей\nКрыша из солнечных батарей</description>
+		<baseCost>900</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>13.0</researchViewX>
+		<researchViewY>15.0</researchViewY>
+		<prerequisites>
+			<li>SK_EnergyWind</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!-- 5 Energy-->
+	<ResearchProjectDef>
+		<defName>SK_EnergySteamGen</defName>
+		<label>Парогенератор</label>
+		<description>Парогенератор\nГромоотвод</description>
+		<baseCost>1000</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>13.0</researchViewX>
+		<researchViewY>15.0</researchViewY>
+		<prerequisites>
+			<li>SK_EnergySolar</li>
+			<li>IntegratedCircuits</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!-- 6 Energy-->
+	<ResearchProjectDef>
+		<defName>SK_EnergyThermal</defName>
+		<label>EnergyThermal</label>
+		<description>Термальный генератор</description>
+		<baseCost>1100</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>13.0</researchViewX>
+		<researchViewY>15.0</researchViewY>
+		<prerequisites>
+			<li>SK_EnergySteamGen</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!-- 7 Energy-->
+	<ResearchProjectDef>
+		<defName>SK_EnergySolarRoof</defName>
+		<label>Масштабируемые солн крыши?</label>
+		<description>Масштабируемые солн крыши?</description>
+		<baseCost>1200</baseCost>
+		<techLevel>Spacer</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>13.0</researchViewX>
+		<researchViewY>15.0</researchViewY>
+		<prerequisites>
+			<li>SK_EnergyThermal</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!-- 8 Energy-->
+	<ResearchProjectDef>
+		<defName>SK_EnergyWindGauss</defName>
+		<label>Wind Gauss</label>
+		<description>Ветровая турбина Гаусса</description>
+		<baseCost>1300</baseCost>
+		<techLevel>Spacer</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>13.0</researchViewX>
+		<researchViewY>15.0</researchViewY>
+		<prerequisites>
+			<li>SK_EnergySolarRoof</li>
+<!--			<li>SK_EnergySolarRoof</li>	набор микрочипов		   -->
+		</prerequisites>
 	</ResearchProjectDef>
 
 	<!-- 2 Energy-->
@@ -1376,7 +1620,7 @@
 		<label>Energy Bio</label>
 		<description>Био генератор</description>
 		<baseCost>700</baseCost>
-		<techLevel>Medieval</techLevel>
+		<techLevel>Industrial</techLevel>
 		<tab>RangedCombat</tab>
 		<researchViewX>13.0</researchViewX>
 		<researchViewY>15.0</researchViewY>
@@ -1391,7 +1635,7 @@
 		<label>Energy Coil</label>
 		<description>Угольная Электростанция</description>
 		<baseCost>800</baseCost>
-		<techLevel>Medieval</techLevel>
+		<techLevel>Industrial</techLevel>
 		<tab>RangedCombat</tab>
 		<researchViewX>13.0</researchViewX>
 		<researchViewY>15.0</researchViewY>
@@ -1406,7 +1650,7 @@
 		<label>Energy Fuel</label>
 		<description>Электростанция на топливе\nГенератор на хим топливе</description>
 		<baseCost>900</baseCost>
-		<techLevel>Medieval</techLevel>
+		<techLevel>Industrial</techLevel>
 		<tab>RangedCombat</tab>
 		<researchViewX>13.0</researchViewX>
 		<researchViewY>15.0</researchViewY>
@@ -1422,7 +1666,7 @@
 		<label>Energy Fuel Big</label>
 		<description>Большая Электростанция на топливе</description>
 		<baseCost>1000</baseCost>
-		<techLevel>Medieval</techLevel>
+		<techLevel>Industrial</techLevel>
 		<tab>RangedCombat</tab>
 		<researchViewX>13.0</researchViewX>
 		<researchViewY>15.0</researchViewY>
@@ -1448,8 +1692,8 @@
 
 	<!-- 2 Electronic-->
 	<ResearchProjectDef>
-		<defName>SK_ElectronicII</defName>
-		<label>IntegratedCircuits</label>
+		<defName>IntegratedCircuits</defName>
+		<label>Integrated Circuits</label>
 		<description>собрать Интегральная схема</description>
 		<baseCost>900</baseCost>
 		<techLevel>Industrial</techLevel>
@@ -1489,7 +1733,7 @@
 		<researchViewY>15.0</researchViewY>
 		<prerequisites>
 			<li>SK_Small_ToolCabinet</li>
-			<li>SK_ElectronicII</li>
+			<li>IntegratedCircuits</li>
 		</prerequisites>		
 	</ResearchProjectDef>
 
@@ -1736,7 +1980,7 @@
 		<researchViewY>25.0</researchViewY>
 		<prerequisites>
 			<li>SK_FishingI</li>
-			<li>SK_ElectronicII</li>
+			<li>IntegratedCircuits</li>
 		</prerequisites>
 	</ResearchProjectDef>
 
