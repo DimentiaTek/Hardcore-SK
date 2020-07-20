@@ -622,16 +622,172 @@
 		</prerequisites>    
 	</ResearchProjectDef>
 
-	<!-- 1 Furniture-->	
+	<!-- 1 Furniture Sit-->	
 	<ResearchProjectDef>
-		<defName>SK_FurnitureI</defName>
-		<label>SK_Furniture I</label>
+		<defName>SK_FurnitureSitI</defName>
+		<label>Стол табурет</label>
 		<description>строить Скамья\nТабурет\nСтол 1х1\nСтол3х3</description>
-		<baseCost>400</baseCost>
+		<baseCost>100</baseCost>
 		<techLevel>Medieval</techLevel>
 		<tab>RangedCombat</tab>
 		<researchViewX>0.0</researchViewX>
 		<researchViewY>8.0</researchViewY>
+	</ResearchProjectDef>
+
+	<!-- 2 Furniture Sit-->	
+	<ResearchProjectDef>
+		<defName>SK_FurnitureSitII</defName>
+		<label>ДиванСоврСтол</label>
+		<description>строить Складной стул\nДиван\nСовременный Стол(виды)\nКресло\nЖурнальный столик</description>
+		<baseCost>300</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>0.0</researchViewX>
+		<researchViewY>8.0</researchViewY>
+		<prerequisites>
+			<li>SK_FurnitureSitI</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!-- 3 Furniture Sit-->	
+	<ResearchProjectDef>
+		<defName>SK_FurnitureSitIII</defName>
+		<label>СоврКушеткаСтул</label>
+		<description>строить Современная кушетка\nКресло-яйцо\nСовременный стул</description>
+		<baseCost>400</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>0.0</researchViewX>
+		<researchViewY>8.0</researchViewY>
+		<prerequisites>
+			<li>SK_FurnitureSitII</li>
+			<li>SK_Syntetic</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!-- 4 Furniture Sit-->	
+	<ResearchProjectDef>
+		<defName>SK_FurnitureSitIV</defName>
+		<label>Продвинутое кресло</label>
+		<description>строить Продвинутое кресло</description>
+		<baseCost>500</baseCost>
+		<techLevel>Spacer</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>0.0</researchViewX>
+		<researchViewY>8.0</researchViewY>
+		<prerequisites>
+			<li>SK_FurnitureSitIII</li>
+			<li>IntegratedCircuits</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!-- 3 Furniture Bed-->
+	<ResearchProjectDef>
+		<defName>SK_FurnitureBedI</defName>
+		<label>Кровать</label>
+		<description>строить Кровать\nГостевая кровать\nДвойная кровать\nДвойная Гостевая кровать</description>
+		<baseCost>200</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>0.0</researchViewX>
+		<researchViewY>8.0</researchViewY>
+<!--		<prerequisites>
+			<li>SK_FurnitureSitIII</li>
+		</prerequisites> -->
+	</ResearchProjectDef>
+
+	<!-- 4 Furniture Bed-->
+	<ResearchProjectDef>
+		<defName>SK_FurnitureBedII</defName>
+		<label>Удобная Кровать</label>
+		<description>строить Удобная Кровать\nУдобная Гостевая кровать\nДвойная удобная кровать\nДвойная Удобная гостевая кровать\nТумба</description>
+		<baseCost>300</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>0.0</researchViewX>
+		<researchViewY>8.0</researchViewY>
+		<prerequisites>
+			<li>SK_FurnitureBedI</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!-- 5 Furniture Bed-->
+	<ResearchProjectDef>
+		<defName>SK_FurnitureBedIII</defName>
+		<label>Индустриальная кровать</label>
+		<description>строить Спальный мешок\nИндустриальная кровать\nИндустриальная Гостевая кровать\nДвойная Индустриальная  кровать\nГостевая Двойная Индустриальная  кровать\nТюремная койка(Пр Лев)\nГостевая Тюремная койка(Пр Лев)???</description>
+		<baseCost>400</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>0.0</researchViewX>
+		<researchViewY>8.0</researchViewY>
+		<prerequisites>
+			<li>SK_FurnitureBedII</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!-- 6 Furniture Bed-->
+	<ResearchProjectDef>
+		<defName>SK_FurnitureBedIV</defName>
+		<label>Роскошная кровать</label>
+		<description>строить Прикроватный столик\nРоскошная кровать\nРоскошная Гостевая кровать</description>
+		<baseCost>500</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>0.0</researchViewX>
+		<researchViewY>8.0</researchViewY>
+		<prerequisites>
+			<li>SK_FurnitureBedIII</li>
+			<li>SK_ConvectionalI</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!-- 7 Furniture Bed-->
+	<ResearchProjectDef>
+		<defName>SK_FurnitureBedV</defName>
+		<label>Современная кровать</label>
+		<description>строить Комод\nСовременная кровать\nСовременная двойная кровать\nСовременная Гостевая кровать\nГостевая Современная двойная кровать</description>
+		<baseCost>600</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>0.0</researchViewX>
+		<researchViewY>8.0</researchViewY>
+		<prerequisites>
+			<li>SK_FurnitureBedIV</li>
+			<li>SK_TableChemlab</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!-- 8 Furniture Bed-->
+	<ResearchProjectDef>
+		<defName>SK_FurnitureBedVI</defName>
+		<label>Крио кровать</label>
+		<description>строить Голографическая ячейка\nКрио кровать\nКрио двойная кровать\nКрио Гостевая кровать\nГостевая Крио двойная кровать\nСаркофаг криптосна</description>
+		<baseCost>700</baseCost>
+		<techLevel>Spacer</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>0.0</researchViewX>
+		<researchViewY>8.0</researchViewY>
+		<prerequisites>
+			<li>SK_FurnitureBedV</li>
+	<!--		<li>SK_TableChemlab</li>	электрический сборочный стол		-->
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!-- 9 Furniture Bed-->
+	<ResearchProjectDef>
+		<defName>SK_FurnitureBedVII</defName>
+		<label>Футуристическая кровать</label>
+		<description>строить Футуристическая кровать\nФутуристическая двойная кровать\nФутуристическая Гостевая кровать\nГостевая Футуристическая двойная кровать</description>
+		<baseCost>800</baseCost>
+		<techLevel>Spacer</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>0.0</researchViewX>
+		<researchViewY>8.0</researchViewY>
+		<prerequisites>
+			<li>SK_FurnitureBedVI</li>
+	<!--		<li>SK_TableChemlab</li>	супермагнит		-->
+		</prerequisites>
 	</ResearchProjectDef>
 
 	<!-- 1 Temperature-->	
@@ -670,7 +826,7 @@
 		<researchViewY>11.0</researchViewY>
 		<prerequisites>
 			<li>SK_JoyI</li>
-		</prerequisites>  
+		</prerequisites>
 	</ResearchProjectDef>
 	
 	<!-- 1 Storage-->	
@@ -719,7 +875,7 @@
 	<!-- 1 Hygiene-->	
 	<ResearchProjectDef>
 		<defName>SK_HygieneI</defName>
-		<label>SK_Hygiene I</label>
+		<label>Колодец</label>
 		<description>строить Балья\nКолодец\nВыгребная яма\nЯма для сжигания</description>
 		<baseCost>100</baseCost>
 		<techLevel>Neolithic</techLevel>
@@ -731,10 +887,10 @@
 	<!-- 2 Hygiene-->	
 	<ResearchProjectDef>
 		<defName>SK_HygieneII</defName>
-		<label>SK_Hygiene II</label>
+		<label>Компостер</label>
 		<description>строить Компостер\nстроить Лоток\nсделать Удобрение</description>
 		<baseCost>300</baseCost>
-		<techLevel>Medieval</techLevel>
+		<techLevel>Neolithic</techLevel>
 		<tab>RangedCombat</tab>
 		<researchViewX>2.0</researchViewX>
 		<researchViewY>14.0</researchViewY>
@@ -747,7 +903,7 @@
 	<ResearchProjectDef>
 		<defName>SK_HygieneIII</defName>
 		<label>SK_Hygiene III</label>
-		<description>строить Дорожка 1х2\nстроить Дорожка 1х3\nстроить Дорожка 1х4</description>
+		<description>Это лучше куданить переместить\nстроить Дорожка 1х2\nстроить Дорожка 1х3\nстроить Дорожка 1х4</description>
 		<baseCost>300</baseCost>
 		<techLevel>Medieval</techLevel>
 		<tab>RangedCombat</tab>
@@ -761,7 +917,7 @@
 	<!-- 4 Hygiene-->	
 	<ResearchProjectDef>
 		<defName>SK_HygieneIV</defName>
-		<label>SK_Hygiene IV</label>
+		<label>ВаннаСкважина</label>
 		<description>строить Ванна\nстроить Дверь кабинки\nстроить Бочка для воды\nВетронасос\nСкважина\nТруба</description>
 		<baseCost>400</baseCost>
 		<techLevel>Medieval</techLevel>
@@ -787,7 +943,127 @@
 			<li>SK_HygieneIV</li>
 		</prerequisites> 
 	</ResearchProjectDef>
-	
+
+	<!-- 6 Hygiene-->	
+	<ResearchProjectDef>
+		<defName>SK_HygieneVI</defName>
+		<label>ДорожкиУбрать!</label>
+		<description>строить Дорожка 1х5\nстроить Дорожка 1х6\nстроить Дорожка 1х7</description>
+		<baseCost>600</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>5.0</researchViewX>
+		<researchViewY>14.0</researchViewY>
+		<prerequisites>
+			<li>SK_HygieneV</li>
+		</prerequisites> 
+	</ResearchProjectDef>
+
+	<!-- 7 Hygiene-->	
+	<ResearchProjectDef>
+		<defName>SK_HygieneVII</defName>
+		<label>Водонапорная башня</label>
+		<description>строить Душ\nстроить Унитаз\nстроить Кухонная раковина\nВодонапорная башня\nСлив сточных вод\nРаковина</description>
+		<baseCost>700</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>5.0</researchViewX>
+		<researchViewY>14.0</researchViewY>
+		<prerequisites>
+			<li>SK_HygieneVI</li>
+		</prerequisites> 
+	</ResearchProjectDef>
+
+	<!-- 7 Hygiene-->	
+	<ResearchProjectDef>
+		<defName>SK_HygieneVIII</defName>
+		<label>Джакузи</label>
+		<description>строить Джакузи\nстроить Септик\nстроить Газовый бойлер\nТермостат</description>
+		<baseCost>700</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>5.0</researchViewX>
+		<researchViewY>14.0</researchViewY>
+		<prerequisites>
+			<li>SK_HygieneVII</li>
+		</prerequisites> 
+	</ResearchProjectDef>
+
+	<!-- 8 Hygiene-->	
+	<ResearchProjectDef>
+		<defName>SK_HygienePool</defName>
+		<label>Бассейн</label>
+		<description>строить Бассейн</description>
+		<baseCost>800</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>5.0</researchViewX>
+		<researchViewY>14.0</researchViewY>
+		<prerequisites>
+			<li>SK_HygieneVIII</li>
+		</prerequisites> 
+	</ResearchProjectDef>
+
+	<!-- 8 Hygiene-->	
+	<ResearchProjectDef>
+		<defName>SK_HygienePump</defName>
+		<label>Электронасос</label>
+		<description>строить Стиральная машинка\nВодоочистительная установка\nЭлектронасос</description>
+		<baseCost>800</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>5.0</researchViewX>
+		<researchViewY>14.0</researchViewY>
+		<prerequisites>
+			<li>SK_HygieneVIII</li>
+		</prerequisites> 
+	</ResearchProjectDef>
+
+	<!-- 9 Hygiene-->	
+	<ResearchProjectDef>
+		<defName>SK_HygieneFiltr</defName>
+		<label>Фильтрация</label>
+		<description>строить Фильтрационная кстановка</description>
+		<baseCost>900</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>5.0</researchViewX>
+		<researchViewY>14.0</researchViewY>
+		<prerequisites>
+			<li>SK_HygienePump</li>
+		</prerequisites> 
+	</ResearchProjectDef>
+
+	<!-- 9 Hygiene-->	
+	<ResearchProjectDef>
+		<defName>SK_HygieneDeepWell</defName>
+		<label>Глубинная скважина</label>
+		<description>строить Глубинная скважина\nНасосная станция\nБольшая водонапорная башня</description>
+		<baseCost>1000</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>5.0</researchViewX>
+		<researchViewY>14.0</researchViewY>
+		<prerequisites>
+			<li>SK_HygieneFiltr</li>
+		</prerequisites> 
+	</ResearchProjectDef>
+
+	<!-- 10 Hygiene-->	
+	<ResearchProjectDef>
+		<defName>SK_HygieneSmartShower</defName>
+		<label>Умный душ</label>
+		<description>строить Умный душ\nУмный унитаз</description>
+		<baseCost>1100</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>5.0</researchViewX>
+		<researchViewY>14.0</researchViewY>
+		<prerequisites>
+			<li>SK_HygieneDeepWell</li>
+		</prerequisites> 
+	</ResearchProjectDef>
+
 	<!-- 5 Boiler-->	
 	<ResearchProjectDef>
 		<defName>SK_HygieneBoiler</defName>
@@ -802,7 +1078,97 @@
 			<li>SK_HygieneIV</li>
 		</prerequisites> 
 	</ResearchProjectDef>
-	
+
+	<!-- 5 Sprinkler-->	
+	<ResearchProjectDef>
+		<defName>SK_HygieneSprinkler</defName>
+		<label>Sprinkler</label>
+		<description>строить Пожарный спринклер\nстроить Спринклер</description>
+		<baseCost>600</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>5.0</researchViewX>
+		<researchViewY>13.0</researchViewY>
+		<prerequisites>
+			<li>SK_HygieneIV</li>
+		</prerequisites> 
+	</ResearchProjectDef>
+
+	<!-- 5 Boiler-->	
+	<ResearchProjectDef>
+		<defName>SK_HygieneRadiator</defName>
+		<label>Радиатор</label>
+		<description>строить Радиатор</description>
+		<baseCost>600</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>5.0</researchViewX>
+		<researchViewY>13.0</researchViewY>
+		<prerequisites>
+			<li>SK_HygieneBoiler</li>
+		</prerequisites> 
+	</ResearchProjectDef>
+
+	<!-- 6 Boiler-->	
+	<ResearchProjectDef>
+		<defName>SK_HygieneCeilingFan</defName>
+		<label>Электробойлер</label>
+		<description>строить Потолочный вентилятор 1х1 2х2\nЭлектробойлер\nСолнечный нагреватель</description>
+		<baseCost>700</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>5.0</researchViewX>
+		<researchViewY>13.0</researchViewY>
+		<prerequisites>
+			<li>SK_HygieneRadiator</li>
+		</prerequisites> 
+	</ResearchProjectDef>
+
+	<!-- 7 Boiler-->	
+	<ResearchProjectDef>
+		<defName>SK_HygieneAirCon</defName>
+		<label>Кондиционирование</label>
+		<description>строить Внешний элемент кондиционирования\nВнутренний элемент кондиционирования\nТруба кондиционера</description>
+		<baseCost>800</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>5.0</researchViewX>
+		<researchViewY>13.0</researchViewY>
+		<prerequisites>
+			<li>SK_HygieneCeilingFan</li>
+		</prerequisites> 
+	</ResearchProjectDef>
+
+	<!-- 8 Boiler-->	
+	<ResearchProjectDef>
+		<defName>SK_HygieneFreezerUnit</defName>
+		<label>Морозильной камеры</label>
+		<description>строить Охладитель морозильной камеры\nБольшой радиатор</description>
+		<baseCost>900</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>5.0</researchViewX>
+		<researchViewY>13.0</researchViewY>
+		<prerequisites>
+			<li>SK_HygieneAirCon</li>
+		</prerequisites> 
+	</ResearchProjectDef>
+
+	<!-- 8 Boiler-->	
+	<ResearchProjectDef>
+		<defName>SK_ElectricCrematorium</defName>
+		<label>электрический крематорий</label>
+		<description>строить электрический крематорий\nСжечь труп\nсжечь Одежду\nсжечь предметы\nсжечь биосолиды до пепла</description>
+		<baseCost>900</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>RangedCombat</tab>
+		<researchViewX>5.0</researchViewX>
+		<researchViewY>13.0</researchViewY>
+<!--		<prerequisites>
+			<li>SK_HygieneAirCon</li>   Зависило от Гигиены. Нужно присоединить к СК дереву
+		</prerequisites>  -->
+	</ResearchProjectDef>
+
 	<!-- 1 Cooking-->	
 	<ResearchProjectDef>
 		<defName>SK_CookingI</defName>
