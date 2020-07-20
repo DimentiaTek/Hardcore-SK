@@ -87,7 +87,7 @@
 		<researchViewY>0.0</researchViewY>
 		<prerequisites>
 			<li>SK_AdvanchedBowII</li>
-			<li>SK_EnergyI</li>			
+			<li>SK_ConvectionalI</li>			
 		</prerequisites>
 	</ResearchProjectDef>	
 
@@ -316,7 +316,7 @@
 		<researchViewY>2.0</researchViewY>
 		<prerequisites>
 			<li>SK_LightI</li>
-			<li>SK_EnergyI</li>			
+			<li>SK_ConvectionalI</li>			
 		</prerequisites>
 	</ResearchProjectDef>
 	
@@ -337,7 +337,7 @@
 	
 	<!-- 5 Light-->	
 	<ResearchProjectDef>
-		<defName>SK_LampColor</defName>
+		<defName>ColoredLights</defName>
 		<label>Lamp Color</label>
 		<description>Красная Лампа\nЗаленая лампа\nСиняя лампа</description>
 		<baseCost>600</baseCost>
@@ -361,7 +361,7 @@
 		<researchViewX>3.0</researchViewX>
 		<researchViewY>2.0</researchViewY>
 		<prerequisites>
-			<li>SK_LampColor</li>
+			<li>ColoredLights</li>
 			<li>SK_TableChemlab</li>
 		</prerequisites>
 	</ResearchProjectDef>
@@ -384,7 +384,7 @@
 
 	<!-- 7 Light-->	
 	<ResearchProjectDef>
-		<defName>SK_LampIII</defName>
+		<defName>LEDTechnologyScience</defName>
 		<label>Светодиодный дюралайт</label>
 		<description>Светодиодный дюралайт</description>
 		<baseCost>700</baseCost>
@@ -573,7 +573,7 @@
 		<researchViewY>6.0</researchViewY>
 		<prerequisites>
 			<li>SK_ConstractionMetDoors</li>
-			<li>SK_EnergyI</li>
+			<li>SK_ConvectionalI</li>
 		</prerequisites>    
 	</ResearchProjectDef>
 	
@@ -633,7 +633,7 @@
 		<researchViewX>0.0</researchViewX>
 		<researchViewY>8.0</researchViewY>
 	</ResearchProjectDef>
-	
+
 	<!-- 1 Temperature-->	
 	<ResearchProjectDef>
 		<defName>SK_TemperatureI</defName>
@@ -1254,7 +1254,7 @@
 
 	<!-- 1 DeepScaner-->
 	<ResearchProjectDef>
-		<defName>SK_GroundPenetratingScanner</defName> 	<!-- GroundPenetratingScanner -->
+		<defName>GroundPenetratingScanner</defName> 	<!-- GroundPenetratingScanner -->
 		<label>Ground Penetrating Scanner</label>
 		<description>Глубинный сканнер\nДобывающая установка</description>
 		<baseCost>900</baseCost>
@@ -1278,14 +1278,14 @@
 		<researchViewX>13.0</researchViewX>
 		<researchViewY>15.0</researchViewY>
 		<prerequisites>
-			<li>SK_GroundPenetratingScanner</li>
+			<li>GroundPenetratingScanner</li>
 			<li>IntegratedCircuits</li>			
 		</prerequisites>
 	</ResearchProjectDef>
 
 	<!-- 3 DeepScaner-->
 	<ResearchProjectDef>
-		<defName>SK_DeepOil</defName>
+		<defName>DeepOilWells</defName>
 		<label>Deep Oil</label>
 		<description>Глубокая нефтяная скважина</description>
 		<baseCost>1000</baseCost>
@@ -1300,7 +1300,7 @@
 
 	<!-- 3 DeepScaner-->
 	<ResearchProjectDef>
-		<defName>SK_LongRangeScanner</defName>
+		<defName>LongRangeMineralScanner</defName>
 		<label>LongRangeScanner</label>
 		<description>Сканер минералов дальнего действия</description>
 		<baseCost>1100</baseCost>
@@ -1391,7 +1391,7 @@
 	<!-- 1 Energy-->
 	<!-- SK_ConvectionalI -->
 	<ResearchProjectDef>
-		<defName>SK_EnergyI</defName>
+		<defName>SK_ConvectionalI</defName><!-- SK_EnergyI -->
 		<label>Генератор на дровах</label>
 		<description>Генератор на дровах\nПереключатель\nКабель\nПодводный кабель</description>
 		<baseCost>600</baseCost>
@@ -1412,7 +1412,7 @@
 		<researchViewX>13.0</researchViewX>
 		<researchViewY>15.0</researchViewY>
 		<prerequisites>
-			<li>SK_EnergyI</li>
+			<li>SK_ConvectionalI</li>
 		</prerequisites>
 	</ResearchProjectDef>
 
@@ -1509,7 +1509,7 @@
 
 	<!-- 2 Energy-->
 	<ResearchProjectDef>
-		<defName>SK_EnergyWater</defName>
+		<defName>WatermillGenerator</defName><!--SK_EnergyWater-->
 		<label>Водяной генератор</label>
 		<description>Водяной генератор</description>
 		<baseCost>700</baseCost>
@@ -1518,13 +1518,13 @@
 		<researchViewX>13.0</researchViewX>
 		<researchViewY>15.0</researchViewY>
 		<prerequisites>
-			<li>SK_EnergyI</li>
+			<li>SK_ConvectionalI</li>
 		</prerequisites>
 	</ResearchProjectDef>
 
 	<!-- 3 Energy-->
 	<ResearchProjectDef>
-		<defName>SK_EnergyWind</defName>
+		<defName>SK_RenewableI</defName>
 		<label>Energy Wind</label>
 		<description>Ветрогенератор\nХомячье колесо(раткин)</description>
 		<baseCost>800</baseCost>
@@ -1533,7 +1533,7 @@
 		<researchViewX>13.0</researchViewX>
 		<researchViewY>15.0</researchViewY>
 		<prerequisites>
-			<li>SK_EnergyWater</li>
+			<li>WatermillGenerator</li>
 		</prerequisites>
 	</ResearchProjectDef>
 
@@ -1548,7 +1548,7 @@
 		<researchViewX>13.0</researchViewX>
 		<researchViewY>15.0</researchViewY>
 		<prerequisites>
-			<li>SK_EnergyWind</li>
+			<li>SK_RenewableI</li>
 		</prerequisites>
 	</ResearchProjectDef>
 
@@ -1616,7 +1616,7 @@
 
 	<!-- 2 Energy-->
 	<ResearchProjectDef>
-		<defName>SK_EnergyBio</defName>
+		<defName>SK_Bioenergy</defName>
 		<label>Energy Bio</label>
 		<description>Био генератор</description>
 		<baseCost>700</baseCost>
@@ -1625,13 +1625,13 @@
 		<researchViewX>13.0</researchViewX>
 		<researchViewY>15.0</researchViewY>
 		<prerequisites>
-			<li>SK_EnergyI</li>
+			<li>SK_ConvectionalI</li>
 		</prerequisites>
 	</ResearchProjectDef>
 
 	<!-- 3 Energy-->
 	<ResearchProjectDef>
-		<defName>SK_EnergyCoil</defName>
+		<defName>SK_ConvectionalII</defName>
 		<label>Energy Coil</label>
 		<description>Угольная Электростанция</description>
 		<baseCost>800</baseCost>
@@ -1640,13 +1640,13 @@
 		<researchViewX>13.0</researchViewX>
 		<researchViewY>15.0</researchViewY>
 		<prerequisites>
-			<li>SK_EnergyBio</li>
+			<li>SK_Bioenergy</li>
 		</prerequisites>
 	</ResearchProjectDef>
 
 	<!-- 4 Energy-->
 	<ResearchProjectDef>
-		<defName>SK_EnergyFuel</defName>
+		<defName>SK_ConvectionalIII</defName><!-- SK_EnergyFuel-->
 		<label>Energy Fuel</label>
 		<description>Электростанция на топливе\nГенератор на хим топливе</description>
 		<baseCost>900</baseCost>
@@ -1655,14 +1655,14 @@
 		<researchViewX>13.0</researchViewX>
 		<researchViewY>15.0</researchViewY>
 		<prerequisites>
-			<li>SK_EnergyCoil</li>
+			<li>SK_ConvectionalII</li>
 			<li>SK_DrugLab</li>
 		</prerequisites>
 	</ResearchProjectDef>
 
 	<!-- 4 Energy-->
 	<ResearchProjectDef>
-		<defName>SK_EnergyFuelBig</defName>
+		<defName>SK_ConvectionalIV</defName><!-- SK_EnergyFuelBig -->
 		<label>Energy Fuel Big</label>
 		<description>Большая Электростанция на топливе</description>
 		<baseCost>1000</baseCost>
@@ -1671,7 +1671,7 @@
 		<researchViewX>13.0</researchViewX>
 		<researchViewY>15.0</researchViewY>
 		<prerequisites>
-			<li>SK_EnergyFuel</li>
+			<li>SK_ConvectionalIII</li>
 		</prerequisites>
 	</ResearchProjectDef>
 
@@ -1686,7 +1686,7 @@
 		<researchViewX>13.0</researchViewX>
 		<researchViewY>15.0</researchViewY>
 		<prerequisites>
-			<li>SK_EnergyI</li>			
+			<li>SK_ConvectionalI</li>			
 		</prerequisites>		
 	</ResearchProjectDef>
 
